@@ -1,6 +1,6 @@
 # Mobile World
 
-Full-stack e-commerce app for Mobile World, a Karachi phone retailer at Star City Mall. Customers browse published inventory, pay by Meezan Bank transfer, upload a payment screenshot, and collect from the shop. The owner manages inventory and orders through the admin panel.
+Full-stack e-commerce app for Mobile World, a Karachi phone retailer at Star City Mall. Customers browse published PTA Approved and Factory Unlocked inventory, pay by Meezan Bank transfer, upload a payment screenshot, and collect from the shop. The owner manages inventory and orders through the admin panel.
 
 ## Stack
 
@@ -75,6 +75,7 @@ The importer:
 ## Important Safety Rules Implemented
 
 - Public inventory routes return only `published: true` products.
+- Public inventory and order placement allow only `pta` and `fu` approval products.
 - `costPrice` is stripped from all public inventory responses.
 - Stock is deducted only on the backend when an order is accepted.
 - Local inventory writes use a temp file followed by rename; Heroku production writes to Postgres.

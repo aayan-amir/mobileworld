@@ -3,7 +3,7 @@ const crypto = require('crypto');
 const { body, param, validationResult } = require('express-validator');
 const upload = require('../middleware/upload');
 const { orderLimiter } = require('../middleware/rateLimit');
-const { readInventory, writeInventory } = require('../services/inventoryStore');
+const { readInventory, writeInventory, isSellable } = require('../services/inventoryStore');
 const { sendOrderEmail } = require('../services/email');
 const { savePaymentScreenshot } = require('../services/uploadStore');
 const { createOrder, getPublicOrder } = require('../services/orderStore');
@@ -55,7 +55,7 @@ router.post(
       const qty = Number(requestItem.qty);
       if (!Number.isInteger(qty) || qty < 1) return res.status(400).json({ error: 'Each item must have a valid quantity.' });
 
-      const product = inventory.find((item) => item.id === requestItem.productId && item.published);
+      const product = inventory.find((item) => item.id === requestItem.productId && isSellable(item));
       if (!product) return res.status(400).json({ error: 'One or more products are unavailable.' });
 
       const variant = (product.variants || []).find((item) => item.variantId === requestItem.variantId);

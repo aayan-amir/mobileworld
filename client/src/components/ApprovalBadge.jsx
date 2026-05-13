@@ -1,6 +1,6 @@
 const styles = {
-  pta: ['PTA Approved', 'bg-green-100 text-green-800'],
-  fu: ['Factory Unlocked', 'bg-blue-100 text-blue-800'],
+  pta: ['PTA Approved', 'bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200'],
+  fu: ['Factory Unlocked', 'bg-sky-50 text-sky-700 ring-1 ring-sky-200'],
   boxpack: ['Box Pack', 'bg-navy text-gold'],
   jv: ['Non-PTA (JV)', 'bg-amber-100 text-amber-800'],
   'non-pta': ['Non-PTA', 'bg-amber-100 text-amber-800'],

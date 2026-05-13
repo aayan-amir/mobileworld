@@ -1,9 +1,12 @@
 export default function Footer() {
   return (
-    <footer className="mt-16 bg-navy px-4 py-10 text-white">
-      <div className="mx-auto max-w-7xl">
-        <div className="font-display text-2xl font-bold text-gold">Mobile World</div>
-        <p className="mt-2 text-sm text-white/75">Star City Mall, Karachi. Premium phones, verified quality, shop pickup.</p>
+    <footer className="mt-16 border-t border-slate-200 bg-white px-4 py-10 text-ink">
+      <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-[1fr_auto]">
+        <div>
+          <div className="font-display text-2xl font-bold">Mobile World</div>
+          <p className="mt-2 max-w-xl text-sm text-muted">PTA Approved and Factory Unlocked phones only. Star City Mall, Karachi. Meezan Bank transfer, then shop pickup.</p>
+        </div>
+        <div className="text-sm font-semibold text-muted">7-day checking warranty</div>
       </div>
     </footer>
   );

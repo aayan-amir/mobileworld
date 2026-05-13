@@ -3,6 +3,7 @@ const path = require('path');
 const { hasPostgres, pool, initPostgres } = require('./postgres');
 
 const inventoryPath = path.join(__dirname, '..', 'data', 'inventory.json');
+const SELLABLE_APPROVALS = new Set(['pta', 'fu']);
 
 async function readInventory() {
   if (hasPostgres) {
@@ -52,7 +53,11 @@ function stripCost(product) {
 
 async function publicProducts(inventory) {
   const source = inventory || await readInventory();
-  return source.filter((p) => p.published).map(stripCost);
+  return source.filter((p) => p.published && SELLABLE_APPROVALS.has(p.approval)).map(stripCost);
 }
 
-module.exports = { inventoryPath, readInventory, writeInventory, stripCost, publicProducts };
+function isSellable(product) {
+  return Boolean(product?.published && SELLABLE_APPROVALS.has(product.approval));
+}
+
+module.exports = { inventoryPath, readInventory, writeInventory, stripCost, publicProducts, isSellable };

@@ -1,6 +1,6 @@
 const express = require('express');
 const { body, param, validationResult } = require('express-validator');
-const { readInventory, publicProducts, stripCost } = require('../services/inventoryStore');
+const { readInventory, publicProducts, stripCost, isSellable } = require('../services/inventoryStore');
 
 const router = express.Router();
 
@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', param('id').trim().notEmpty().withMessage('Product ID is required.'), validationError, async (req, res) => {
-  const product = (await readInventory()).find((item) => item.id === req.params.id && item.published);
+  const product = (await readInventory()).find((item) => item.id === req.params.id && isSellable(item));
   if (!product) return res.status(404).json({ error: 'Product not found.' });
   return res.json(stripCost(product));
 });

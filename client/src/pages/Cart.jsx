@@ -8,7 +8,7 @@ export default function Cart() {
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
-      <h1 className="font-display text-5xl font-bold text-navy">Cart</h1>
+      <h1 className="font-display text-5xl font-bold text-ink">Cart</h1>
       {cart.items.length === 0 ? (
         <div className="panel mt-8 p-8">
           <p className="text-muted">Your cart is empty.</p>
@@ -21,7 +21,7 @@ export default function Cart() {
               <div key={`${item.productId}-${item.variantId}`} className="panel flex flex-wrap items-center gap-4 p-4">
                 <div className="grid h-20 w-20 place-items-center rounded-xl bg-navy text-gold font-bold">MW</div>
                 <div className="min-w-0 flex-1">
-                  <h2 className="font-bold text-navy">{item.name}</h2>
+                  <h2 className="font-bold text-ink">{item.name}</h2>
                   <p className="text-sm text-muted">{item.variant}</p>
                   <p className="mt-1 font-bold">{pkr(item.price)}</p>
                 </div>

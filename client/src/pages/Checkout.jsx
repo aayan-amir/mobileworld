@@ -44,7 +44,7 @@ export default function Checkout() {
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
-      <h1 className="font-display text-5xl font-bold text-navy">Checkout</h1>
+      <h1 className="font-display text-5xl font-bold text-ink">Checkout</h1>
       <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_380px]">
         <form className="panel space-y-5 p-6" onSubmit={submit}>
           <div>
@@ -68,11 +68,11 @@ export default function Checkout() {
           <button className="btn-primary w-full" disabled={loading || cart.items.length === 0} type="submit">{loading ? 'Submitting...' : 'Submit Order'}</button>
         </form>
         <aside className="panel h-fit p-5">
-          <h2 className="font-display text-2xl font-bold text-navy">Order Summary</h2>
+          <h2 className="text-2xl font-bold text-ink">Order Summary</h2>
           <div className="mt-4 space-y-3">
             {cart.items.map((item) => (
               <div key={`${item.productId}-${item.variantId}`} className="border-b border-slate-100 pb-3">
-                <div className="font-bold text-navy">{item.name}</div>
+                <div className="font-bold text-ink">{item.name}</div>
                 <div className="text-sm text-muted">{item.variant} x {item.qty}</div>
                 <div className="font-bold">{pkr(item.price * item.qty)}</div>
               </div>

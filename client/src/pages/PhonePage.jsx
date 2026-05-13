@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ShoppingCart } from 'lucide-react';
+import { CheckCircle2, MapPin, ShoppingCart } from 'lucide-react';
 import ApprovalBadge from '../components/ApprovalBadge';
 import ConditionBadge from '../components/ConditionBadge';
 import StockBadge from '../components/StockBadge';
@@ -29,14 +29,14 @@ export default function PhonePage() {
   const specs = Object.entries(phone.specs || {}).filter(([, value]) => value);
 
   return (
-    <main className="mx-auto max-w-7xl px-4 py-10">
+    <main className="mx-auto max-w-7xl px-4 py-8">
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="panel overflow-hidden">
-          <div className="grid aspect-square place-items-center bg-gradient-to-br from-navy via-navy-light to-slate-800">
+        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <div className="grid aspect-square place-items-center bg-gradient-to-br from-slate-100 to-slate-300">
             {phone.images?.[0] ? (
               <img src={phone.images[0]} alt={phone.name} className="h-full w-full object-cover" />
             ) : (
-              <div className="h-80 w-44 rounded-[2.4rem] border-8 border-slate-200 bg-slate-950 shadow-2xl" />
+              <div className="phone-render scale-125" />
             )}
           </div>
         </div>
@@ -46,20 +46,20 @@ export default function PhonePage() {
               <ApprovalBadge approval={phone.approval} />
               <ConditionBadge condition={phone.condition} />
             </div>
-            <h1 className="font-display text-5xl font-bold text-navy">{phone.name}</h1>
-            <p className="mt-3 text-lg font-bold text-ink">{pkr(selected?.price)}</p>
+            <h1 className="font-display text-4xl font-bold leading-tight text-ink md:text-6xl">{phone.name}</h1>
+            <p className="mt-4 text-3xl font-bold text-ink">{pkr(selected?.price)}</p>
           </div>
 
           <UsedPhoneWarning condition={phone.condition} approval={phone.approval} />
           <VariantSelector variants={phone.variants} selected={selected} onSelect={setSelected} />
 
-          <div className="panel p-5">
-            <h2 className="mb-3 font-display text-2xl font-bold text-navy">Specs</h2>
+          <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h2 className="mb-3 text-lg font-bold text-ink">Specs</h2>
             <dl className="grid gap-3 sm:grid-cols-2">
               {specs.map(([key, value]) => (
                 <div key={key} className="rounded-lg bg-slate-50 p-3">
                   <dt className="text-xs font-bold uppercase text-muted">{key}</dt>
-                  <dd className="font-semibold text-navy">{value}</dd>
+                  <dd className="font-semibold text-ink">{value}</dd>
                 </div>
               ))}
             </dl>
@@ -70,10 +70,10 @@ export default function PhonePage() {
               <ShoppingCart size={20} /> Add to Cart
             </button>
             <StockBadge stock={selected?.stock || 0} />
-            <span className="rounded-full bg-white px-3 py-2 text-sm font-bold text-navy shadow-sm">{phone.warranty}</span>
+            <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 text-sm font-bold text-ink shadow-sm"><CheckCircle2 size={16} /> {phone.warranty}</span>
           </div>
-          <p className="text-sm font-semibold text-muted">Pickup from Star City Mall, Karachi. We will contact you to arrange collection.</p>
-          <Link className="font-bold text-gold" to="/shop">Back to shop</Link>
+          <p className="flex items-center gap-2 text-sm font-semibold text-muted"><MapPin size={16} /> Pickup from Star City Mall, Karachi. We will contact you to arrange collection.</p>
+          <Link className="font-bold text-ink underline underline-offset-4" to="/shop">Back to shop</Link>
         </section>
       </div>
     </main>

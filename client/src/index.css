@@ -3,17 +3,14 @@
 @tailwind utilities;
 
 :root {
-  color: #1A1A2E;
-  background: #F8F9FA;
+  color: #111827;
+  background: #F4F6F8;
 }
 
 body {
   margin: 0;
   font-family: 'DM Sans', sans-serif;
-  background:
-    linear-gradient(120deg, rgba(15, 31, 61, 0.08), transparent 34%),
-    linear-gradient(240deg, rgba(201, 168, 76, 0.12), transparent 28%),
-    #F8F9FA;
+  background: #F4F6F8;
 }
 
 button, input, select, textarea {
@@ -21,21 +18,35 @@ button, input, select, textarea {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gold px-4 py-2 font-semibold text-navy transition-colors hover:bg-gold-light disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-5 py-3 font-semibold text-white transition-colors hover:bg-navy disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-navy/15 bg-white px-4 py-2 font-semibold text-navy transition-colors hover:bg-navy hover:text-white disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-3 font-semibold text-ink transition-colors hover:border-ink disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 .panel {
-  @apply rounded-2xl bg-white shadow-md;
+  @apply rounded-xl border border-slate-200 bg-white shadow-sm;
 }
 
 .field {
-  @apply w-full rounded-lg border border-slate-200 bg-white px-3 py-2 outline-none ring-gold/30 transition focus:ring-4;
+  @apply w-full rounded-lg border border-slate-200 bg-white px-3 py-2 outline-none ring-ink/10 transition focus:ring-4;
 }
 
 .label {
-  @apply mb-1 block text-sm font-semibold text-navy;
+  @apply mb-1 block text-sm font-semibold text-ink;
+}
+
+.phone-render {
+  @apply relative mx-auto h-52 w-28 rounded-[1.75rem] border-[7px] border-slate-900 bg-slate-950 shadow-2xl;
+}
+
+.phone-render::before {
+  content: '';
+  @apply absolute left-1/2 top-3 h-3 w-12 -translate-x-1/2 rounded-full bg-slate-800;
+}
+
+.phone-render::after {
+  content: '';
+  @apply absolute inset-x-5 bottom-5 top-10 rounded-2xl bg-gradient-to-br from-slate-700 via-slate-900 to-black;
 }
