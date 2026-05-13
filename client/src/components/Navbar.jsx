@@ -20,15 +20,15 @@ export default function Navbar() {
     <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 text-ink shadow-sm backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
         <Link to="/" className="flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-lg bg-ink font-display text-lg font-bold text-white">MW</span>
+          <span className="grid h-10 w-10 place-items-center rounded-xl bg-cobalt text-lg font-extrabold text-white shadow-lg shadow-blue-500/20">MW</span>
           <span>
-            <span className="block font-display text-2xl font-bold leading-none text-ink">Mobile World</span>
+            <span className="block text-2xl font-extrabold leading-none tracking-[-0.03em] text-ink">Mobile World</span>
             <span className="hidden text-xs font-bold uppercase tracking-[0.18em] text-muted sm:block">PTA and FU phones</span>
           </span>
         </Link>
         <nav className="hidden items-center gap-2 text-sm font-semibold md:flex">
-          <NavLink to="/shop" className={({ isActive }) => `rounded-lg px-4 py-2 ${isActive ? 'bg-slate-100 text-ink' : 'text-muted hover:bg-slate-50 hover:text-ink'}`}>Shop</NavLink>
-          <NavLink to="/admin" className={({ isActive }) => `rounded-lg px-4 py-2 ${isActive ? 'bg-slate-100 text-ink' : 'text-muted hover:bg-slate-50 hover:text-ink'}`}>Admin</NavLink>
+          <NavLink to="/shop" className={({ isActive }) => `rounded-lg px-4 py-2 ${isActive ? 'bg-cobalt text-white' : 'text-muted hover:bg-slate-50 hover:text-ink'}`}>Shop</NavLink>
+          <NavLink to="/admin" className={({ isActive }) => `rounded-lg px-4 py-2 ${isActive ? 'bg-cobalt text-white' : 'text-muted hover:bg-slate-50 hover:text-ink'}`}>Admin</NavLink>
         </nav>
         <div className="flex items-center gap-2">
           <Link to="/cart" className="relative rounded-lg border border-slate-200 p-2 hover:border-ink" title="Cart">

@@ -9,8 +9,11 @@
 
 body {
   margin: 0;
-  font-family: 'DM Sans', sans-serif;
-  background: #F4F6F8;
+  font-family: 'Manrope', sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.13), transparent 28rem),
+    radial-gradient(circle at 80% 10%, rgba(16, 185, 129, 0.12), transparent 24rem),
+    #EEF2F6;
 }
 
 button, input, select, textarea {
@@ -18,11 +21,11 @@ button, input, select, textarea {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-5 py-3 font-semibold text-white transition-colors hover:bg-navy disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-cobalt px-5 py-3 font-bold text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-3 font-semibold text-ink transition-colors hover:border-ink disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-5 py-3 font-bold text-ink transition-colors hover:border-cobalt hover:text-cobalt disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 .panel {

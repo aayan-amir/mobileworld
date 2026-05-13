@@ -36,7 +36,7 @@ export default function PhonePage() {
             {phone.images?.[0] ? (
               <img src={phone.images[0]} alt={phone.name} className="h-full w-full object-cover" />
             ) : (
-              <div className="phone-render scale-125" />
+              <img src={phone.brand === 'Apple' ? 'https://images.pexels.com/photos/19281836/pexels-photo-19281836.jpeg?auto=compress&cs=tinysrgb&w=1200' : 'https://images.pexels.com/photos/28919439/pexels-photo-28919439.jpeg?auto=compress&cs=tinysrgb&w=1200'} alt={phone.name} className="h-full w-full object-cover" />
             )}
           </div>
         </div>
