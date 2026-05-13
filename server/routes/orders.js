@@ -90,13 +90,11 @@ router.post(
       screenshot_path: screenshot.path,
       screenshot_url: screenshot.url
     });
-    try {
-      await sendOrderEmail(order, screenshot);
-    } catch (error) {
-      console.error('Order email failed:', error.message);
-    }
+    res.status(201).json({ orderId: id });
 
-    return res.status(201).json({ orderId: id });
+    sendOrderEmail(order, screenshot).catch((error) => {
+      console.error('Order email failed:', error.message);
+    });
   }
 );
 
