@@ -11,11 +11,14 @@ function validationError(req, res, next) {
 }
 
 router.get('/', (req, res) => {
-  res.json(publicProducts());
+  publicProducts().then((products) => res.json(products)).catch((error) => {
+    console.error(error);
+    res.status(500).json({ error: 'Could not load inventory.' });
+  });
 });
 
-router.get('/:id', param('id').trim().notEmpty().withMessage('Product ID is required.'), validationError, (req, res) => {
-  const product = readInventory().find((item) => item.id === req.params.id && item.published);
+router.get('/:id', param('id').trim().notEmpty().withMessage('Product ID is required.'), validationError, async (req, res) => {
+  const product = (await readInventory()).find((item) => item.id === req.params.id && item.published);
   if (!product) return res.status(404).json({ error: 'Product not found.' });
   return res.json(stripCost(product));
 });

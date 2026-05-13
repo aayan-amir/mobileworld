@@ -3,9 +3,10 @@ const fs = require('fs');
 const path = require('path');
 const bcrypt = require('bcryptjs');
 const { body, param, query, validationResult } = require('express-validator');
-const db = require('../db');
 const { verifyJWT, setAuthCookie } = require('../middleware/auth');
 const { readInventory, writeInventory } = require('../services/inventoryStore');
+const { listOrders, getOrder, updateOrder } = require('../services/orderStore');
+const { resolveLocalUpload } = require('../services/uploadStore');
 
 const router = express.Router();
 const statuses = ['pending', 'confirmed', 'completed', 'returned'];
@@ -46,11 +47,9 @@ router.post('/logout', (req, res) => {
 
 router.get('/me', (req, res) => res.json({ email: req.admin.email }));
 
-router.get('/orders', query('status').optional().isIn(statuses).withMessage('Invalid status.'), validationError, (req, res) => {
-  const rows = req.query.status
-    ? db.prepare('SELECT * FROM orders WHERE status = ? ORDER BY created_at DESC').all(req.query.status)
-    : db.prepare('SELECT * FROM orders ORDER BY created_at DESC').all();
-  res.json(rows.map((order) => ({ ...order, items: JSON.parse(order.items) })));
+router.get('/orders', query('status').optional().isIn(statuses).withMessage('Invalid status.'), validationError, async (req, res) => {
+  const rows = await listOrders(req.query.status);
+  res.json(rows);
 });
 
 router.patch(
@@ -61,26 +60,23 @@ router.patch(
     body('notes').optional({ nullable: true }).isString().isLength({ max: 2000 }).withMessage('Notes are too long.')
   ],
   validationError,
-  (req, res) => {
-    const existing = db.prepare('SELECT * FROM orders WHERE id = ?').get(req.params.id);
+  async (req, res) => {
+    const existing = await getOrder(req.params.id);
     if (!existing) return res.status(404).json({ error: 'Order not found.' });
-    const status = req.body.status || existing.status;
-    const notes = req.body.notes ?? existing.notes;
-    db.prepare('UPDATE orders SET status = ?, notes = ? WHERE id = ?').run(status, notes, req.params.id);
-    const updated = db.prepare('SELECT * FROM orders WHERE id = ?').get(req.params.id);
-    res.json({ ...updated, items: JSON.parse(updated.items) });
+    const updated = await updateOrder(req.params.id, req.body);
+    res.json(updated);
   }
 );
 
-router.get('/inventory', (req, res) => res.json(readInventory()));
+router.get('/inventory', async (req, res) => res.json(await readInventory()));
 
-router.put('/inventory', body().isArray().withMessage('Inventory must be an array.'), validationError, (req, res) => {
-  writeInventory(req.body);
+router.put('/inventory', body().isArray().withMessage('Inventory must be an array.'), validationError, async (req, res) => {
+  await writeInventory(req.body);
   res.json({ ok: true, count: req.body.length });
 });
 
-router.patch('/inventory/:id', param('id').trim().notEmpty(), validationError, (req, res) => {
-  const inventory = readInventory();
+router.patch('/inventory/:id', param('id').trim().notEmpty(), validationError, async (req, res) => {
+  const inventory = await readInventory();
   const index = inventory.findIndex((item) => item.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Product not found.' });
 
@@ -88,7 +84,7 @@ router.patch('/inventory/:id', param('id').trim().notEmpty(), validationError, (
   for (const key of allowed) {
     if (Object.prototype.hasOwnProperty.call(req.body, key)) inventory[index][key] = req.body[key];
   }
-  writeInventory(inventory);
+  await writeInventory(inventory);
   res.json(inventory[index]);
 });
 
@@ -98,8 +94,8 @@ router.patch('/inventory/:id/variants/:variantId', [
   body('stock').optional().isInt({ min: 0 }).withMessage('Stock must be zero or higher.'),
   body('price').optional().isInt({ min: 0 }).withMessage('Price must be zero or higher.'),
   body('costPrice').optional().isInt({ min: 0 }).withMessage('Cost price must be zero or higher.')
-], validationError, (req, res) => {
-  const inventory = readInventory();
+], validationError, async (req, res) => {
+  const inventory = await readInventory();
   const product = inventory.find((item) => item.id === req.params.id);
   if (!product) return res.status(404).json({ error: 'Product not found.' });
   const variant = (product.variants || []).find((item) => item.variantId === req.params.variantId);
@@ -107,19 +103,19 @@ router.patch('/inventory/:id/variants/:variantId', [
   for (const key of ['stock', 'price', 'costPrice']) {
     if (Object.prototype.hasOwnProperty.call(req.body, key)) variant[key] = Number(req.body[key]);
   }
-  writeInventory(inventory);
+  await writeInventory(inventory);
   res.json(variant);
 });
 
-router.delete('/inventory/:id', param('id').trim().notEmpty(), validationError, (req, res) => {
-  const next = readInventory().filter((item) => item.id !== req.params.id);
-  writeInventory(next);
+router.delete('/inventory/:id', param('id').trim().notEmpty(), validationError, async (req, res) => {
+  const next = (await readInventory()).filter((item) => item.id !== req.params.id);
+  await writeInventory(next);
   res.json({ ok: true });
 });
 
 router.get('/uploads/:filename', param('filename').matches(/^[a-f0-9-]+\.(jpg|jpeg|png|webp)$/i), validationError, (req, res) => {
-  const filePath = path.join(__dirname, '..', 'uploads', req.params.filename);
-  if (!fs.existsSync(filePath)) return res.status(404).json({ error: 'Screenshot not found.' });
+  const filePath = resolveLocalUpload(req.params.filename);
+  if (!filePath || !fs.existsSync(filePath)) return res.status(404).json({ error: 'Screenshot not found.' });
   res.sendFile(filePath);
 });
 

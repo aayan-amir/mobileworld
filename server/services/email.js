@@ -8,7 +8,7 @@ function configured() {
   return process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD && process.env.OWNER_EMAIL;
 }
 
-async function sendOrderEmail(order, screenshotPath) {
+async function sendOrderEmail(order, screenshot) {
   if (!configured()) return { skipped: true };
 
   const transporter = nodemailer.createTransport({
@@ -19,7 +19,7 @@ async function sendOrderEmail(order, screenshotPath) {
     }
   });
 
-  const items = JSON.parse(order.items);
+  const items = typeof order.items === 'string' ? JSON.parse(order.items) : order.items;
   const rows = items.map((item) => `
     <tr>
       <td>${item.name}</td>
@@ -43,9 +43,9 @@ async function sendOrderEmail(order, screenshotPath) {
         <tbody>${rows}</tbody>
       </table>
       <h3>Grand total: ${money(order.total_amount)}</h3>
-      <p>Payment screenshot is attached.</p>
+      <p>Payment screenshot is ${screenshot?.url ? `<a href="${screenshot.url}">available here</a>` : 'attached'}.</p>
     `,
-    attachments: screenshotPath ? [{ filename: 'payment-screenshot', path: screenshotPath }] : []
+    attachments: screenshot?.localPath ? [{ filename: 'payment-screenshot', path: screenshot.localPath }] : []
   });
 
   return { sent: true };

@@ -1,6 +1,11 @@
 const path = require('path');
 const Database = require('better-sqlite3');
 
+if (process.env.DATABASE_URL) {
+  module.exports = null;
+  return;
+}
+
 const db = new Database(path.join(__dirname, 'data', 'orders.sqlite'));
 
 db.pragma('journal_mode = WAL');

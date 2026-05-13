@@ -5,11 +5,11 @@ Full-stack e-commerce app for Mobile World, a Karachi phone retailer at Star Cit
 ## Stack
 
 - Frontend: React 18, Vite, React Router v6, Tailwind CSS v3
-- Backend: Node.js, Express, SQLite with `better-sqlite3`
-- Inventory: flat JSON file at `server/data/inventory.json`
+- Backend: Node.js, Express, SQLite locally or Heroku Postgres in production
+- Inventory: flat JSON locally or Heroku Postgres in production
 - Email: Nodemailer with Gmail SMTP app password
 - Auth: JWT in an httpOnly SameSite=Strict cookie, bcrypt password hash
-- Uploads: Multer screenshot uploads, jpg/png/webp only, 5MB max
+- Uploads: Multer screenshot uploads, local files in dev or Cloudinary in production
 
 ## Local Setup
 
@@ -43,12 +43,12 @@ Run the apps:
 npm run dev
 ```
 
-Frontend: `http://localhost:5173`  
+Frontend: `http://localhost:5173`
 Backend: `http://localhost:3001`
 
 ## Inventory Import
 
-The current inventory was imported from:
+The current local inventory was imported from:
 
 ```bash
 server/scripts/importInventory.js "C:\Users\mobil\Downloads\MobileHQ_2026-05-09.json"
@@ -60,6 +60,8 @@ Run it again with:
 cd server
 node scripts/importInventory.js "C:\path\to\MobileHQ_2026-05-09.json"
 ```
+
+If `DATABASE_URL` is present, the importer writes to Postgres. Otherwise it writes to `server/data/inventory.json`.
 
 The importer:
 
@@ -75,13 +77,77 @@ The importer:
 - Public inventory routes return only `published: true` products.
 - `costPrice` is stripped from all public inventory responses.
 - Stock is deducted only on the backend when an order is accepted.
-- Inventory writes use a temp file followed by rename.
+- Local inventory writes use a temp file followed by rename; Heroku production writes to Postgres.
 - Admin routes use JWT auth after login.
 - SQLite writes use parameterized statements.
 - CORS uses only `ALLOWED_ORIGIN`.
 - Uploads are not directory-listed, and screenshot previews require admin auth.
 
-## Deployment
+## Heroku Deployment
+
+This repo is Heroku-ready as a single app. Heroku serves:
+
+- React app from `client/dist`
+- API routes from `/api/...`
+
+Create the app:
+
+```bash
+heroku create mobile-world
+```
+
+Add Postgres:
+
+```bash
+heroku addons:create heroku-postgresql:essential-0
+```
+
+Generate an admin password hash:
+
+```bash
+cd server
+node -e "console.log(require('bcryptjs').hashSync('yourpassword', 12))"
+cd ..
+```
+
+Set config vars:
+
+```bash
+heroku config:set NODE_ENV=production
+heroku config:set ADMIN_EMAIL=your@email.com
+heroku config:set ADMIN_PASSWORD_HASH='paste_hash_here'
+heroku config:set JWT_SECRET='replace_with_64_char_random_string'
+heroku config:set GMAIL_USER=your@gmail.com
+heroku config:set GMAIL_APP_PASSWORD='xxxx_xxxx_xxxx_xxxx'
+heroku config:set OWNER_EMAIL=notify@youremail.com
+heroku config:set OWNER_ACCOUNT_TITLE='Mobile World'
+heroku config:set OWNER_ACCOUNT_NUMBER=0123456789012345
+heroku config:set CLOUDINARY_CLOUD_NAME=your_cloud_name
+heroku config:set CLOUDINARY_API_KEY=your_api_key
+heroku config:set CLOUDINARY_API_SECRET=your_api_secret
+```
+
+Deploy:
+
+```bash
+git push heroku main
+```
+
+Seed inventory into Heroku Postgres from your local machine. First get the Heroku database URL:
+
+```bash
+heroku config:get DATABASE_URL
+```
+
+Then:
+
+```bash
+cd server
+$env:DATABASE_URL='paste_database_url_here'
+node scripts/importInventory.js "C:\path\to\MobileHQ_2026-05-09.json"
+```
+
+## Vercel + Railway Alternative
 
 Deploy `client/` to Vercel and set:
 

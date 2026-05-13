@@ -75,7 +75,7 @@ function OrderModal({ order, onClose, onSave }) {
             </div>
           </div>
           <div className="space-y-4">
-            {order.screenshot_path && <img src={imageUrl(order.screenshot_path)} alt="Payment screenshot" className="max-h-80 w-full rounded-xl object-contain bg-slate-50" />}
+            {(order.screenshot_url || order.screenshot_path) && <img src={imageUrl(order.screenshot_url || order.screenshot_path)} alt="Payment screenshot" className="max-h-80 w-full rounded-xl object-contain bg-slate-50" />}
             <div>
               <label className="label">Status</label>
               <select className="field" value={order.status} onChange={(e) => onSave(order, { status: e.target.value })}>

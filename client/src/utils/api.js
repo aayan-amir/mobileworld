@@ -1,4 +1,4 @@
-export const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
+export const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
 
 async function request(path, options = {}) {
   const isForm = options.body instanceof FormData;
@@ -37,5 +37,7 @@ export function pkr(amount) {
 }
 
 export function imageUrl(filename) {
+  if (!filename) return '';
+  if (/^https?:\/\//.test(filename)) return filename;
   return `${API_BASE}/api/admin/uploads/${filename}`;
 }

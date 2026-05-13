@@ -16,8 +16,10 @@ const storage = multer.diskStorage({
   }
 });
 
+const memoryStorage = multer.memoryStorage();
+
 const upload = multer({
-  storage,
+  storage: process.env.CLOUDINARY_CLOUD_NAME ? memoryStorage : storage,
   limits: { fileSize: 5 * 1024 * 1024 },
   fileFilter: (req, file, cb) => {
     if (!allowed.has(file.mimetype)) return cb(new Error('Payment screenshot must be jpg, png, or webp.'));

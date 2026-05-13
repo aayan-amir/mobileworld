@@ -1,14 +1,43 @@
 const fs = require('fs');
 const path = require('path');
+const { hasPostgres, pool, initPostgres } = require('./postgres');
 
 const inventoryPath = path.join(__dirname, '..', 'data', 'inventory.json');
 
-function readInventory() {
+async function readInventory() {
+  if (hasPostgres) {
+    await initPostgres();
+    const { rows } = await pool.query("SELECT product FROM inventory_products ORDER BY product->>'brand', product->>'name'");
+    return rows.map((row) => row.product);
+  }
+
   if (!fs.existsSync(inventoryPath)) return [];
   return JSON.parse(fs.readFileSync(inventoryPath, 'utf8') || '[]');
 }
 
-function writeInventory(inventory) {
+async function writeInventory(inventory) {
+  if (hasPostgres) {
+    await initPostgres();
+    const client = await pool.connect();
+    try {
+      await client.query('BEGIN');
+      await client.query('DELETE FROM inventory_products');
+      for (const product of inventory) {
+        await client.query(
+          'INSERT INTO inventory_products (id, product, updated_at) VALUES ($1, $2::jsonb, NOW())',
+          [product.id, JSON.stringify(product)]
+        );
+      }
+      await client.query('COMMIT');
+    } catch (error) {
+      await client.query('ROLLBACK');
+      throw error;
+    } finally {
+      client.release();
+    }
+    return;
+  }
+
   const tmpPath = `${inventoryPath}.${process.pid}.${Date.now()}.tmp`;
   fs.writeFileSync(tmpPath, JSON.stringify(inventory, null, 2), 'utf8');
   fs.renameSync(tmpPath, inventoryPath);
@@ -21,8 +50,9 @@ function stripCost(product) {
   };
 }
 
-function publicProducts(inventory = readInventory()) {
-  return inventory.filter((p) => p.published).map(stripCost);
+async function publicProducts(inventory) {
+  const source = inventory || await readInventory();
+  return source.filter((p) => p.published).map(stripCost);
 }
 
 module.exports = { inventoryPath, readInventory, writeInventory, stripCost, publicProducts };

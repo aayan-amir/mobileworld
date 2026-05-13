@@ -1,12 +1,12 @@
 const express = require('express');
 const crypto = require('crypto');
-const path = require('path');
 const { body, param, validationResult } = require('express-validator');
-const db = require('../db');
 const upload = require('../middleware/upload');
 const { orderLimiter } = require('../middleware/rateLimit');
 const { readInventory, writeInventory } = require('../services/inventoryStore');
 const { sendOrderEmail } = require('../services/email');
+const { savePaymentScreenshot } = require('../services/uploadStore');
+const { createOrder, getPublicOrder } = require('../services/orderStore');
 
 const router = express.Router();
 const phoneRegex = /^(03\d{2}[-\s]?\d{7}|\+923\d{9})$/;
@@ -47,7 +47,7 @@ router.post(
     if (!req.file) return res.status(400).json({ error: 'Payment screenshot is required.' });
 
     const requestedItems = parseItems(req.body.items);
-    const inventory = readInventory();
+    const inventory = await readInventory();
     const orderItems = [];
     let total = 0;
 
@@ -75,27 +75,23 @@ router.post(
       });
     }
 
-    writeInventory(inventory);
+    await writeInventory(inventory);
 
     const id = orderId();
-    const insert = db.prepare(`
-      INSERT INTO orders (id, customer_name, customer_email, customer_phone, items, total_amount, screenshot_path, status)
-      VALUES (?, ?, ?, ?, ?, ?, ?, 'pending')
-    `);
+    const screenshot = await savePaymentScreenshot(req.file);
 
-    insert.run(
+    const order = await createOrder({
       id,
-      req.body.name.trim(),
-      req.body.email.trim().toLowerCase(),
-      req.body.phone.trim(),
-      JSON.stringify(orderItems),
-      total,
-      req.file.filename
-    );
-
-    const order = db.prepare('SELECT * FROM orders WHERE id = ?').get(id);
+      customer_name: req.body.name.trim(),
+      customer_email: req.body.email.trim().toLowerCase(),
+      customer_phone: req.body.phone.trim(),
+      items: orderItems,
+      total_amount: total,
+      screenshot_path: screenshot.path,
+      screenshot_url: screenshot.url
+    });
     try {
-      await sendOrderEmail(order, path.join(__dirname, '..', 'uploads', req.file.filename));
+      await sendOrderEmail(order, screenshot);
     } catch (error) {
       console.error('Order email failed:', error.message);
     }
@@ -104,8 +100,8 @@ router.post(
   }
 );
 
-router.get('/:id', param('id').trim().notEmpty().withMessage('Order ID is required.'), validationError, (req, res) => {
-  const order = db.prepare('SELECT id, created_at, total_amount, status, notes FROM orders WHERE id = ?').get(req.params.id);
+router.get('/:id', param('id').trim().notEmpty().withMessage('Order ID is required.'), validationError, async (req, res) => {
+  const order = await getPublicOrder(req.params.id);
   if (!order) return res.status(404).json({ error: 'Order not found.' });
   if (!statusValues.has(order.status)) return res.status(500).json({ error: 'Invalid order status.' });
   return res.json(order);

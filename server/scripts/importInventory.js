@@ -1,6 +1,9 @@
+require('dotenv').config({ path: require('path').join(__dirname, '..', '.env') });
+
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { writeInventory } = require('../services/inventoryStore');
 
 const inputPath = process.argv[2];
 if (!inputPath) {
@@ -144,10 +147,20 @@ inventory.sort((a, b) => {
 });
 
 const outputPath = path.join(__dirname, '../data/inventory.json');
-fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-fs.writeFileSync(outputPath, JSON.stringify(inventory, null, 2), 'utf8');
+(async () => {
+  if (process.env.DATABASE_URL) {
+    await writeInventory(inventory);
+  } else {
+    fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+    fs.writeFileSync(outputPath, JSON.stringify(inventory, null, 2), 'utf8');
+  }
 
-const noPrice = inventory.filter((product) => product.variants[0].price === 0).length;
-console.log(`Imported ${inventory.length} in-stock products to inventory.json`);
-console.log(`${noPrice} products have no price - set them in admin panel before publishing`);
-console.log('Review _importedFrom field in admin to verify name parsing');
+  const noPrice = inventory.filter((product) => product.variants[0].price === 0).length;
+  console.log(`Imported ${inventory.length} in-stock products to ${process.env.DATABASE_URL ? 'Postgres' : 'inventory.json'}`);
+  console.log(`${noPrice} products have no price - set them in admin panel before publishing`);
+  console.log('Review _importedFrom field in admin to verify name parsing');
+  process.exit(0);
+})().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
