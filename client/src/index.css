@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #1A1A2E;
+  background: #F8F9FA;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background:
+    linear-gradient(120deg, rgba(15, 31, 61, 0.08), transparent 34%),
+    linear-gradient(240deg, rgba(201, 168, 76, 0.12), transparent 28%),
+    #F8F9FA;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gold px-4 py-2 font-semibold text-navy transition-colors hover:bg-gold-light disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-navy/15 bg-white px-4 py-2 font-semibold text-navy transition-colors hover:bg-navy hover:text-white disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.panel {
+  @apply rounded-2xl bg-white shadow-md;
+}
+
+.field {
+  @apply w-full rounded-lg border border-slate-200 bg-white px-3 py-2 outline-none ring-gold/30 transition focus:ring-4;
+}
+
+.label {
+  @apply mb-1 block text-sm font-semibold text-navy;
+}

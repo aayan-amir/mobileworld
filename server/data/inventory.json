@@ -1,0 +1,5975 @@
+[
+  {
+    "id": "apple-ipad-air-m3-128gb-unspecified",
+    "name": "IPAD AIR M3 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "3bda4bc8-dfa4-43ca-8f36-c3320eb435b7",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 11000,
+        "price": 13000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPAD AIR M3 128GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-11-64gb-unspecified",
+    "name": "IPHONE 11 64GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "64GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "39529f45-1cf5-4251-b0bd-06f9488bbc3f",
+        "storage": "64GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 30000,
+        "price": 33000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 11 64GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-11-pro-pta",
+    "name": "IPHONE 11 PRO",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "86c5d070-c875-47d0-a60a-7ed9163f0259",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 55000,
+        "price": 61000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 11 PRO PTA",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-11-pro-256gb-pta",
+    "name": "IPHONE 11 PRO 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "f3eaf00a-947e-45e3-8bab-976111b60b94",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 11 PRO 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-11-pro-64gb-pta",
+    "name": "IPHONE 11 PRO 64GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "64GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "ff13ee56-7e1e-40e6-ba67-88ae42ec6bab",
+        "storage": "64GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 40000,
+        "price": 44000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 11 PRO 64GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-11-pro-max-256gb-pta",
+    "name": "IPHONE 11 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "df9d4b3b-2d3f-48ee-93df-3e8dad5d2e93",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 80000,
+        "price": 88000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 11 PRO MAX 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-11-pro-max-512gb-pta",
+    "name": "IPHONE 11 PRO MAX 512GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "15af9c1e-c9c6-45bb-b6a1-501a85bfb3c0",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 11 PRO MAX 512GB PTA",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-11-pro-max-64gb-pta",
+    "name": "IPHONE 11 PRO MAX 64GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "64GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "b1a93cf9-8924-4c67-bb9c-cdd790eaabcc",
+        "storage": "64GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 70000,
+        "price": 77000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 11 PRO MAX 64GB PTA",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-11pro-256gb-pta",
+    "name": "IPHONE 11PRO 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "c49e2939-11dd-4463-b8f9-610721da6cce",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 80000,
+        "price": 88000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 11PRO 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-11pro-max-64gb-pta",
+    "name": "IPHONE 11PRO MAX 64GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "64GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "91215f61-d244-4353-b3f3-7461a73cb550",
+        "storage": "64GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 70000,
+        "price": 77000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 11PRO MAX 64GB PTA",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-12-jv",
+    "name": "IPHONE 12",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "917a80cb-baa2-4c78-aa52-9dfcf4539e3e",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 JV",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-12-128gb-pta",
+    "name": "IPHONE 12 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "7f234cf6-56eb-4400-b625-bcceb5ff086d",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 77500,
+        "price": 86000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 12 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-12-256gb-pta",
+    "name": "IPHONE 12 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "1fb95dc7-f8dd-460b-bfee-39bc901da1cf",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 85000,
+        "price": 94000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-12-256gb-blue-pta",
+    "name": "IPHONE 12 256GB BLUE",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": "Blue",
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "29fc9ec9-354e-420b-a70c-465c8514c3be",
+        "storage": "256GB",
+        "color": "Blue",
+        "approval": "pta",
+        "costPrice": 85000,
+        "price": 94000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 256GB PTA BLUE",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-12-64gb-unspecified",
+    "name": "IPHONE 12 64GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "64GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "1ccce4c4-2ac0-482e-b678-7681e95d491e",
+        "storage": "64GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 64GB",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-12-mini-unspecified",
+    "name": "IPHONE 12 MINI",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "9036b2bb-5257-4101-a506-f34c3e318f29",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 MINI",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-12-mini-128gb-unspecified",
+    "name": "IPHONE 12 MINI 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "20f70d27-6852-481b-8417-ab660a5f235c",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 MINI 128GB",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-12-mini-64gb-purple-unspecified",
+    "name": "IPHONE 12 MINI 64GB PURPLE",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "64GB",
+      "color": "Purple",
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "c118c348-14af-4099-99a6-a54612bbb874",
+        "storage": "64GB",
+        "color": "Purple",
+        "approval": "unspecified",
+        "costPrice": 30000,
+        "price": 33000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 12 MINI 64GB PURPLE",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-unspecified",
+    "name": "IPHONE 12 PRO",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "cf4e8fde-83d4-4077-bd08-7c14f2324940",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-128gb-pta",
+    "name": "IPHONE 12 PRO 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "8c596a8f-192a-4ef5-b756-f9a21a55b2bb",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-256gb-pta",
+    "name": "IPHONE 12 PRO 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "6125cfde-fb9a-45e6-9dfa-b9b97300a8e2",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 97500,
+        "price": 108000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-512gb-unspecified",
+    "name": "IPHONE 12 PRO 512GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "5a76a39a-ae32-4cf0-b5d3-fcd62886ea30",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 100000,
+        "price": 111000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO 512GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-max-non-pta",
+    "name": "IPHONE 12 PRO MAX",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "non-pta",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "1b783afd-5626-4eda-8898-3c9259a6bdb5",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "non-pta",
+        "costPrice": 75000,
+        "price": 83000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO MAX NON",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-max-jv",
+    "name": "IPHONE 12 PRO MAX",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "feefe7fb-4dad-418b-a154-f7f49588eed6",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 75000,
+        "price": 83000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO MAX JV",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-max-pta",
+    "name": "IPHONE 12 PRO MAX",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "7a25f5ee-d42b-4733-9c12-603cc67eba48",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 4
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO MAX PTA",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-max-128gb-pta",
+    "name": "IPHONE 12 PRO MAX 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "de204254-fd13-4b3e-9b1e-8a00789e1622",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 120000,
+        "price": 132000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO MAX 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-max-128gb-unspecified",
+    "name": "IPHONE 12 PRO MAX 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "d71a9bcd-bfd4-4fed-bcce-b264389b560c",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO MAX 128GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-max-256gb-pta",
+    "name": "IPHONE 12 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "ba43a242-c073-4f85-b1ed-ebd019375ef5",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 3
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO MAX 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-max-256gb-fu",
+    "name": "IPHONE 12 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "fu",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "07776c0e-2e00-4bea-85f3-d762c41bcdb8",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "fu",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO MAX 256GB FU",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-12-pro-max-512gb-unspecified",
+    "name": "IPHONE 12 PRO MAX 512GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "89162609-cb83-4581-b2ab-8642ceec712d",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 60000,
+        "price": 66000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12 PRO MAX 512GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-12pro-128gb-unspecified",
+    "name": "IPHONE 12PRO 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "c7b539d5-8293-466c-8bbf-8cd0239d3f00",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 75000,
+        "price": 83000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12PRO 128GB",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-12pro-max-128gb-unspecified",
+    "name": "IPHONE 12PRO MAX 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "e9d9563a-d65f-47f8-9111-505d04c08758",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 65000,
+        "price": 72000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12PRO MAX 128GB",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-12pro-max-128gb-pta",
+    "name": "IPHONE 12PRO MAX 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "762e4802-09e2-4d1d-9064-459d632467cb",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 120000,
+        "price": 132000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12PRO MAX 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-12pro-max-256gb-unspecified",
+    "name": "IPHONE 12PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "485f4e3f-2650-448a-97d2-127015052236",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 80000,
+        "price": 88000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 12PRO MAX 256GB",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-12pro-max-256gb-pta",
+    "name": "IPHONE 12PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "ad9c60a1-658c-47bc-a318-265505ca619a",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 145000,
+        "price": 160000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 12PRO MAX 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-13-unspecified",
+    "name": "IPHONE 13",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "8c4b0052-1909-4ef8-8280-9144bf55398c",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 58000,
+        "price": 64000,
+        "stock": 3
+      }
+    ],
+    "_importedFrom": "IPHONE 13",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-13-jv",
+    "name": "IPHONE 13",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "a8029cf3-fa62-4160-9eb2-6d0a8bdd06f0",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 56000,
+        "price": 62000,
+        "stock": 3
+      }
+    ],
+    "_importedFrom": "IPHONE 13 JV",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-13-128gb-unspecified",
+    "name": "IPHONE 13 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "8a296216-7bb9-457a-b7bd-05d48236f3eb",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 58000,
+        "price": 64000,
+        "stock": 6
+      }
+    ],
+    "_importedFrom": "IPHONE 13 128GB ",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-13-128gb-kit-jv",
+    "name": "IPHONE 13 128GB KIT",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "f274742b-8e7e-40b8-9c30-a4b632c5f65a",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 55000,
+        "price": 61000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 13 128GB JV KIT",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-13-256-pta",
+    "name": "IPHONE 13 256",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "b0aa6b86-d5c0-47f2-8885-27e6d0972d6b",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 127000,
+        "price": 140000,
+        "stock": 7
+      }
+    ],
+    "_importedFrom": "IPHONE 13 256 PTA",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-13-256gb-pta",
+    "name": "IPHONE 13 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "cf29a5ea-53f3-42eb-a536-140de7c49572",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 115000,
+        "price": 127000,
+        "stock": 3
+      }
+    ],
+    "_importedFrom": "IPHONE 13 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-13-512gb-unspecified",
+    "name": "IPHONE 13 512GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "931b459c-1035-42ed-886d-04b050793380",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 13 512GB ",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-13-pro-128gb-unspecified",
+    "name": "IPHONE 13 PRO 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "1eb24b4d-d196-43dd-8fb6-9109879c1a3f",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 13 PRO 128GB",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-13-pro-256gb-pta",
+    "name": "IPHONE 13 PRO 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "2737144c-c6a3-44ec-bf46-452d793f38db",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 13 PRO 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-13-pro-256gb-unspecified",
+    "name": "IPHONE 13 PRO 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "d3569de0-b77f-43f8-a2b6-e0e1c5bde38b",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 80000,
+        "price": 88000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 13 PRO 256GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-13-pro-512-gb-pta",
+    "name": "IPHONE 13 PRO 512 GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "cb841419-7476-46cc-b747-f1d5b621d19d",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 165000,
+        "price": 182000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 13 PRO 512 GB PTA",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-13-pro-512gb-pta",
+    "name": "IPHONE 13 PRO 512GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "1bb53e0d-370d-4bc1-b266-2df62bc76525",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 145000,
+        "price": 160000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 13 PRO 512GB PTA",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-13-pro-max-128gb-pta",
+    "name": "IPHONE 13 PRO MAX 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "823e0640-9481-434a-8115-69c59340dc13",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 137000,
+        "price": 151000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 13 PRO MAX 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-13-pro-max-256gb-pta",
+    "name": "IPHONE 13 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "6499b615-1a12-4831-8cc3-00f9b34a6841",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 188000,
+        "price": 207000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 13 PRO MAX 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-14-pta",
+    "name": "IPHONE 14",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "63b18182-b3a5-4778-83f7-62d2af743c7b",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 147000,
+        "price": 162000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-14-jv",
+    "name": "IPHONE 14",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "0745b510-5cb5-4672-af97-605f27bf82e7",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 68000,
+        "price": 75000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 14 JV",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-14-128-jv",
+    "name": "IPHONE 14 128",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "59e17be6-0c13-4af7-967c-bfa9cfc00d1b",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 68000,
+        "price": 75000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 14 128 JV",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-14-plus-128gb-fu",
+    "name": "IPHONE 14 PLUS 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "fu",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "724ac591-2805-4869-80f2-42c5e05b28f3",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "fu",
+        "costPrice": 80000,
+        "price": 88000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PLUS 128GB FU",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-128gb-pta",
+    "name": "IPHONE 14 PRO 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "107d55d6-2f16-4eba-aeed-de8a1a29d3d9",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 155000,
+        "price": 171000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-128gb-fu",
+    "name": "IPHONE 14 PRO 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "fu",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "ae0e3199-59bb-43f4-ac95-705cad60af7b",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "fu",
+        "costPrice": 110000,
+        "price": 122000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO 128GB FU",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-128gb-unspecified",
+    "name": "IPHONE 14 PRO 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "a96820a7-53ea-43fd-b11d-22b2f683df61",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO 128GB",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-256gb-unspecified",
+    "name": "IPHONE 14 PRO 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "47213672-2333-4616-8af4-48711291adae",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO 256GB",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-512gb-unspecified",
+    "name": "IPHONE 14 PRO 512GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "2fddf00c-b2ec-41c2-8c93-6454095b7335",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 140000,
+        "price": 154000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO 512GB",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-lla-pta",
+    "name": "IPHONE 14 PRO LLA",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "f9ae42f1-8377-407a-bf37-c051a6bff9ae",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO LLA PTA",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-max-pta",
+    "name": "IPHONE 14 PRO MAX",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "96927729-7287-4def-b053-7c1c17d8e107",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO MAX PTA",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-max-128gb-pta",
+    "name": "IPHONE 14 PRO MAX 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "9ef7e68b-d413-477d-9b02-7d0c9e841586",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO MAX 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-max-128gb-unspecified",
+    "name": "IPHONE 14 PRO MAX 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "e4d2a3d4-7601-4b90-ab66-a76aa5f7a2d9",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 135000,
+        "price": 149000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO MAX 128GB",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-max-128gb-pta-2",
+    "name": "IPHONE 14 PRO MAX 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "a589572a-8dfe-45c4-955e-57bfba4b8f3c",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 200000,
+        "price": 221000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO MAX PTA 128GB",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-max-256gb-pta",
+    "name": "IPHONE 14 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "e267f15c-789c-4a5c-b6a4-c984c989c4a1",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 200000,
+        "price": 221000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO MAX 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-max-256gb-jv",
+    "name": "IPHONE 14 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "60ba0ae8-a422-43f6-9254-3ddcb77301c8",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 140000,
+        "price": 154000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO MAX 256GB JV",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-14-pro-max-512gb-boxpack",
+    "name": "IPHONE 14 PRO MAX 512GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "boxpack",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "7c808759-1ae5-4710-9242-88c737928f57",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "boxpack",
+        "costPrice": 100000,
+        "price": 111000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14 PRO MAX 512GB B/P",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-14-fu",
+    "name": "IPHONE 14+",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "fu",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "d42c03c6-999f-4731-a75e-7482515b3d75",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "fu",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14+ FU",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-14-jv-2",
+    "name": "IPHONE 14+",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "b12713a9-5e36-465a-90ae-0f06ae96f703",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 68000,
+        "price": 75000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14+ JV",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-14-unspecified",
+    "name": "IPHONE 14+ /",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "0d3f61e5-db7e-4055-8a86-9d47a84a6831",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 70000,
+        "price": 77000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 14+ JV/FU",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-14-128gb-unspecified",
+    "name": "IPHONE 14+ 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "2f0fdd66-044c-4c8c-ac44-09e0edd728f8",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 109000,
+        "price": 120000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 14+ 128GB",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-15-jv",
+    "name": "IPHONE 15",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "d7c6f25d-4297-4ed8-a807-feeaef11263b",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 95000,
+        "price": 105000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 15 JV",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-15-128gb-unspecified-2",
+    "name": "IPHONE 15 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "b13d5a27-bf3a-407d-b970-9c0ef18fd9bf",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 95000,
+        "price": 105000,
+        "stock": 9
+      }
+    ],
+    "_importedFrom": "IPHONE 15 128GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-15-128gb-jv",
+    "name": "IPHONE 15 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "cfb12f67-5997-4542-8466-67def2a8d12b",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 88000,
+        "price": 97000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 15 128GB JV",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-15-128gb-pink-jv",
+    "name": "IPHONE 15 128GB PINK",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": "Pink",
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "95619040-9ecf-4021-b434-61b8e045e69c",
+        "storage": "128GB",
+        "color": "Pink",
+        "approval": "jv",
+        "costPrice": 90000,
+        "price": 100000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 15 128GB JV PINK",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-15-kit-jv",
+    "name": "IPHONE 15 KIT",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "fbaa17ed-092a-4bcf-bdf2-2c5ca7714c26",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 85000,
+        "price": 94000,
+        "stock": 4
+      }
+    ],
+    "_importedFrom": "IPHONE 15 JV KIT",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-15-pro-unspecified",
+    "name": "IPHONE 15 PRO",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "8204503f-e056-4fdd-8bab-f522ba9ea4b8",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 132000,
+        "price": 146000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 15 PRO",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-15-pro-128-unspecified",
+    "name": "IPHONE 15 PRO 128",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "050b6a36-084b-4838-a920-e1c912061666",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 132000,
+        "price": 146000,
+        "stock": 4
+      }
+    ],
+    "_importedFrom": "IPHONE 15 PRO 128",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-15-pro-128gb-unspecified",
+    "name": "IPHONE 15 PRO 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "35d78a0c-1126-4c5e-bf6f-518467b0cf34",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 132000,
+        "price": 146000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 15 PRO 128GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-15-pro-128gb-pta",
+    "name": "IPHONE 15 PRO 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "0f2b7c79-eda9-40c9-81dc-4be612512cf4",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 15 PRO 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-15-pro-max-jv",
+    "name": "IPHONE 15 PRO MAX",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "295a8808-fb03-4b09-a1f1-7c39dd168700",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 155000,
+        "price": 171000,
+        "stock": 4
+      }
+    ],
+    "_importedFrom": "IPHONE 15 PRO MAX JV",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-15-pro-max-pta",
+    "name": "IPHONE 15 PRO MAX",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "8f33c219-72da-4284-86d8-cdee4cbd3084",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 15 PRO MAX PTA",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-15-pro-max-256gb-jv",
+    "name": "IPHONE 15 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "751c9457-58a3-45c3-9d2e-42e792878479",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 151000,
+        "price": 167000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 15 PRO MAX 256GB JV",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-15-pro-max-256gb-unspecified",
+    "name": "IPHONE 15 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "0b7bfae7-6723-431a-acc1-592b9a0b5888",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 155000,
+        "price": 171000,
+        "stock": 5
+      }
+    ],
+    "_importedFrom": "IPHONE 15 PRO MAX 256GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-15-pro-max-256gb-pta",
+    "name": "IPHONE 15 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "0c2665cc-fc9b-402a-8829-1c7f9ffb65b6",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 270000,
+        "price": 297000,
+        "stock": 3
+      }
+    ],
+    "_importedFrom": "IPHONE 15 PRO MAX 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-15-unspecified",
+    "name": "IPHONE 15+",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "5be9fbdd-e884-4b8b-9227-c7053d234523",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 103000,
+        "price": 114000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 15+",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-15-128-256gb-unspecified",
+    "name": "IPHONE 15+ 128/256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "0f5d683b-1ff9-45c3-b450-5364a63f98e7",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 95000,
+        "price": 105000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 15+ 128/256GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-15-128gb-unspecified",
+    "name": "IPHONE 15+ 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "37f8315b-5e39-47cb-9639-8f61e3b5331f",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 108000,
+        "price": 119000,
+        "stock": 4
+      }
+    ],
+    "_importedFrom": "IPHONE 15+ 128GB",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-16-jv",
+    "name": "IPHONE 16",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "2c6202d9-0884-4dff-8182-966df814af93",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16 JV",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-16-fu",
+    "name": "IPHONE 16",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "fu",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "f5aafbd5-8bd0-497f-802a-52ac22137d13",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "fu",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16 FU",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-16-128gb-unspecified",
+    "name": "IPHONE 16 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "cc7dac39-7dc6-4e22-90a0-a9174c3babef",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16 128GB",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "apple-iphone-16-256gb-unspecified-2",
+    "name": "IPHONE 16 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "2fa96e27-47ef-4ffa-a738-cf4780015ef2",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16 256GB",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-16-plus-128gb-jv",
+    "name": "IPHONE 16 PLUS 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "0b4588d0-227b-4f8d-8620-41082b589254",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 110000,
+        "price": 122000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 16 PLUS 128GB JV",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-16-pro-128gb-unspecified",
+    "name": "IPHONE 16 PRO 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "7970fb94-53a5-45c1-be5f-93e0993b26ca",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 16 PRO 128GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-16-pro-256gb-unspecified",
+    "name": "IPHONE 16 PRO 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "5191477c-7205-44bf-bd4f-66327e324cfd",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16 PRO 256GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-16-pro-512gb-unspecified",
+    "name": "IPHONE 16 PRO 512GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "17107a50-79e5-4776-befc-a82e1abb43e7",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 200000,
+        "price": 221000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16 PRO 512GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-16-pro-max-unspecified",
+    "name": "IPHONE 16 PRO MAX",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "2c441c26-f564-4398-9fce-a8bc9e0d11e3",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 190000,
+        "price": 210000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 16 PRO MAX",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-16-pro-max-1tb-unspecified",
+    "name": "IPHONE 16 PRO MAX 1TB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "1TB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "fcee8c3b-beb5-4a5a-90b4-6a8dc6ab47a4",
+        "storage": "1TB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16 PRO MAX 1TB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-16-pro-max-256gb-jv",
+    "name": "IPHONE 16 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "ce65b478-16ab-4207-8027-73056b0f4379",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 190000,
+        "price": 210000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 16 PRO MAX 256GB JV",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-16-pro-max-256gb-unspecified",
+    "name": "IPHONE 16 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "4f316424-276e-4aa6-8123-24d2daf4ce6a",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 193000,
+        "price": 213000,
+        "stock": 6
+      }
+    ],
+    "_importedFrom": "IPHONE 16 PRO MAX 256GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-16-pro-max-512gb-unspecified",
+    "name": "IPHONE 16 PRO MAX 512GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "9e99d614-fa6c-44f1-89c7-d8167282573e",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 216000,
+        "price": 238000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 16 PRO MAX 512GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-16-unspecified",
+    "name": "IPHONE 16+",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "8961c1e6-755c-412b-89e8-4dfcf7b053e0",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 118000,
+        "price": 130000,
+        "stock": 4
+      }
+    ],
+    "_importedFrom": "IPHONE 16+",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-16-128gb-unspecified-2",
+    "name": "IPHONE 16+ 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "4c0c7c8c-2ed3-4141-9a78-7f985d3915d3",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 125000,
+        "price": 138000,
+        "stock": 9
+      }
+    ],
+    "_importedFrom": "IPHONE 16+ 128GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-16-256gb-unspecified",
+    "name": "IPHONE 16+ 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "fab4a90c-714f-49e7-b8fa-61478d8967f7",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 130000,
+        "price": 143000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16+ 256GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-16-512gb-unspecified",
+    "name": "IPHONE 16+ 512GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "ea1dc486-3b0a-468a-8a6c-26872b286fd0",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16+ 512GB",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-16e-unspecified",
+    "name": "IPHONE 16E",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "546ba8e2-20af-4fbc-af4a-d8c634a0ccfb",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 65300,
+        "price": 72000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16E",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-16e-128gb-unspecified",
+    "name": "IPHONE 16E 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "bcdb176f-79a7-43e9-a21c-fd0672c87a0b",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 70000,
+        "price": 77000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16E 128GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-16pro-128gb-unspecified",
+    "name": "IPHONE 16PRO 128GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "cb57abb5-8bdf-474b-a217-ce3767b3591a",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 160000,
+        "price": 176000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "IPHONE 16PRO 128GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-16pro-max-256gb-unspecified",
+    "name": "IPHONE 16PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "17ec8f30-6cf3-4200-8aac-7e8b05ebb7e6",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 190000,
+        "price": 210000,
+        "stock": 4
+      }
+    ],
+    "_importedFrom": "IPHONE 16PRO MAX 256GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-16pro-max-512gb-unspecified",
+    "name": "IPHONE 16PRO MAX 512GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "34c2178b-e7e9-4256-ad94-13f4b6cf1f7d",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 200000,
+        "price": 221000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 16PRO MAX 512GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-17-256gb-unspecified",
+    "name": "IPHONE 17 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "2281c9c0-f613-402f-877f-949d5db9b305",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 190000,
+        "price": 210000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 17 256GB",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-17-pro-max-fu",
+    "name": "IPHONE 17 PRO MAX",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "fu",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "ddbe621f-7dd1-48e6-8e71-737c7d396307",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "fu",
+        "costPrice": 350000,
+        "price": 386000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 17 PRO MAX FU",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-17-pro-max-unspecified",
+    "name": "IPHONE 17 PRO MAX",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "784466de-52ca-49d0-9122-1bb67eb88175",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 270000,
+        "price": 297000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 17 PRO MAX",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-17-pro-max-256gb-unspecified",
+    "name": "IPHONE 17 PRO MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "7ddc4e02-360f-4844-bed0-ff54de67a844",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 300000,
+        "price": 330000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE 17 PRO MAX 256GB",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-se-2-unspecified",
+    "name": "IPHONE SE 2",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "88b18c01-9939-43b8-8693-ee4693ad5d56",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 20000,
+        "price": 22000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE SE 2",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-se-2nd-gen-unspecified",
+    "name": "IPHONE SE 2ND GEN",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "4289c031-508c-4d44-a81d-e64162412877",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 17000,
+        "price": 19000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE SE 2ND GEN",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "apple-iphone-se-3-64gb-unspecified",
+    "name": "IPHONE SE 3 64GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "64GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "e47b1bc9-b562-4498-a2ad-a291bba519e3",
+        "storage": "64GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE SE 3 64GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-xr-64gb-fu",
+    "name": "IPHONE XR 64GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "fu",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "64GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "8a716925-6527-4d90-aab9-c55492cef9ff",
+        "storage": "64GB",
+        "color": "Default",
+        "approval": "fu",
+        "costPrice": 15000,
+        "price": 17000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE XR 64GB FU",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "apple-iphone-xs-256gb-pta",
+    "name": "IPHONE XS 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "da54e8c6-6fdf-4bac-9987-d1df1c54a27a",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 45000,
+        "price": 50000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE XS 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "apple-iphone-xs-64gb-unspecified",
+    "name": "IPHONE XS 64GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "64GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "3c5dde1d-ef42-41c6-a5c1-96de682bbb5d",
+        "storage": "64GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 25000,
+        "price": 28000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE XS 64GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-xs-max-256gb-unspecified",
+    "name": "IPHONE XS MAX 256GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "e52a0c63-bc83-401e-9a4d-e2c225a2d2b5",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 40000,
+        "price": 44000,
+        "stock": 3
+      }
+    ],
+    "_importedFrom": "IPHONE XS MAX 256GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "apple-iphone-xs-max-64gb-unspecified",
+    "name": "IPHONE XS MAX 64GB",
+    "brand": "Apple",
+    "category": "IPHONE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "64GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "d39a8c14-13e6-41eb-8670-0886cd0fe121",
+        "storage": "64GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "IPHONE XS MAX 64GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-flip-5-256gb-unspecified",
+    "name": "FLIP 5 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "02757aca-8e63-461a-913e-086c845a852c",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 60000,
+        "price": 66000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "FLIP 5 256GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-flip-7-256gb-pta",
+    "name": "FLIP 7 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "621ea28a-3345-43cf-8418-09d9b2730b81",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "FLIP 7 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "samsung-flip-7-256gb-cpid",
+    "name": "FLIP 7 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "cpid",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "d7fbd840-5b44-4154-9525-05e4ea4b47d1",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "cpid",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "FLIP 7 256GB CPID",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "samsung-fold-3-256gb-pta",
+    "name": "FOLD 3 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "5bdedf5a-23d0-4442-8fb9-db95d5c1bc74",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "FOLD 3 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "samsung-fold-4-mdm",
+    "name": "FOLD 4",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "mdm",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "efda83de-265e-40e1-9ca6-7c1c3f5de117",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "mdm",
+        "costPrice": 40000,
+        "price": 44000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "FOLD 4 MDM",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "samsung-fold-4-256gb-unspecified",
+    "name": "FOLD 4 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "1205a109-fad7-4ec8-8bb9-e418b72da2d4",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 80000,
+        "price": 88000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "FOLD 4 256GB",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-fold-5-256gb-unspecified",
+    "name": "FOLD 5 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "dfdca5e5-481d-499d-873e-657dd73fb0a7",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "FOLD 5 256GB",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "samsung-fold-5-512gb-jv",
+    "name": "FOLD 5 512GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "9eac5cc0-025a-421f-80ff-f563de2ca70d",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "FOLD 5 512GB BP JV",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "samsung-fold-6-256gb-unspecified",
+    "name": "FOLD 6 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "37aca9ba-4f2b-4fbb-984b-977097886d25",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 260000,
+        "price": 286000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "FOLD 6 256GB",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "samsung-note-10-unspecified",
+    "name": "NOTE 10",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "357cfa67-e5bf-4e74-a262-135876280080",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 30000,
+        "price": 33000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "NOTE 10",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-note-20-256gb-cpid",
+    "name": "NOTE 20 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "cpid",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "3a722469-2191-4374-9669-6bd79e10874b",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "cpid",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "NOTE 20 256GB CPID",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "samsung-s20-128gb-pta",
+    "name": "S20 128GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "8bfe018f-8cd8-4659-8a85-58bc8e8c2885",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 40000,
+        "price": 44000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S20 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s21-pta",
+    "name": "S21",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "fb40598b-92e1-4445-982a-4ab6136db3f8",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 60000,
+        "price": 66000,
+        "stock": 5
+      }
+    ],
+    "_importedFrom": "S21 PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s21-128gb-pta",
+    "name": "S21 128GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "40e27671-7163-4010-a7f5-0f53574b9a4b",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 60000,
+        "price": 66000,
+        "stock": 7
+      }
+    ],
+    "_importedFrom": "S21 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s21-128gb-white-pta",
+    "name": "S21 128GB WHITE",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": "White",
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "075426c1-1352-4059-bf77-23cb2013ae84",
+        "storage": "128GB",
+        "color": "White",
+        "approval": "pta",
+        "costPrice": 60000,
+        "price": 66000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S21 128GB PTA WHITE",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "samsung-s21-ultra-pta",
+    "name": "S21 ULTRA",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "0eef6ee7-80a6-4cd1-b4f1-f8eec7aec37a",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 90000,
+        "price": 100000,
+        "stock": 3
+      }
+    ],
+    "_importedFrom": "S21 ULTRA PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s21-ultra-pta-2",
+    "name": "S21 ULTRA",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "b4380b06-b746-4055-a80d-3a7caa11d7e8",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 60000,
+        "price": 66000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S21 ULTRA NON PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s21-ultra-128gb-pta",
+    "name": "S21 ULTRA 128GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "4d9fca9e-2f7d-424c-96e8-b73faa813e01",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 90000,
+        "price": 100000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "S21 ULTRA 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s21-128gb-pta-2",
+    "name": "S21+ 128GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "5da47257-c59b-41ef-b860-0e8b557d99e6",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 50000,
+        "price": 56000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S21+ 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s22-pta",
+    "name": "S22",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "22d2ab8d-4f7c-4a8e-b952-1b209b9c68f6",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S22 PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s22-non-pta",
+    "name": "S22 -",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "non-pta",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "669bd48c-bd82-40bd-ab18-a1688062c1ff",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "non-pta",
+        "costPrice": 50000,
+        "price": 56000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S22 NON-PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s22-128gb-pta",
+    "name": "S22 128GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "1e610ecc-74ee-42a8-b0fd-8c0cfb57e26b",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 88000,
+        "price": 97000,
+        "stock": 4
+      }
+    ],
+    "_importedFrom": "S22 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s22-ultra-pta",
+    "name": "S22 ULTRA",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "4e4f283d-c230-4f51-b0d9-89eb56aaae04",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "S22 ULTRA PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s22-ultra-128gb-pta",
+    "name": "S22 ULTRA 128GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "2880fd07-4e2b-4394-84df-590657be930a",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 90000,
+        "price": 100000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S22 ULTRA 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s22-ultra-128gb-cpid",
+    "name": "S22 ULTRA 128GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "cpid",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "c5b97dfd-a002-4aff-9c73-349137d8b101",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "cpid",
+        "costPrice": 90000,
+        "price": 100000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "S22 ULTRA 128GB CPID",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "samsung-s22-ultra-512gb-pta",
+    "name": "S22 ULTRA 512GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "d9daf691-d341-418b-a3e9-232a6595c6d5",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 137000,
+        "price": 151000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "S22 ULTRA 512GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s22-pta-2",
+    "name": "S22+",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "b02a1958-e284-4648-81dc-937d864807d1",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 70000,
+        "price": 77000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S22+ NON PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s23-fe-unspecified",
+    "name": "S23 FE",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "d3c58557-cf08-4e32-bb26-bf88b25f308e",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 40000,
+        "price": 44000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S23 FE",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "samsung-s23-fe-non-pta",
+    "name": "S23 FE",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "non-pta",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "5a76dc91-8bc4-4f97-977d-11b164e87312",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "non-pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S23 FE NON",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "samsung-s23-ultra-cpid",
+    "name": "S23 ULTRA",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "cpid",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "5c859514-5ee9-4b77-bb38-7da30696acb7",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "cpid",
+        "costPrice": 110000,
+        "price": 122000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S23 ULTRA CPID",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "samsung-s23-ultra-pta",
+    "name": "S23 ULTRA",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "d98e25de-cc13-4a18-8500-6597d11e4de3",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S23 ULTRA PTA",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "samsung-s23-ultra-256gb-pta",
+    "name": "S23 ULTRA 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "8ae4f421-5aee-4d61-82fc-d0d699148e90",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 135000,
+        "price": 149000,
+        "stock": 12
+      }
+    ],
+    "_importedFrom": "S23 ULTRA 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s23-ultra-256gb-cpid",
+    "name": "S23 ULTRA 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "cpid",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "1c38d1ca-7a4a-4c95-9c73-5ada9f65c9cb",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "cpid",
+        "costPrice": 135000,
+        "price": 149000,
+        "stock": 3
+      }
+    ],
+    "_importedFrom": "S23 ULTRA 256GB CPID",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "samsung-s23-ultra-256gb-kit-unspecified",
+    "name": "S23 ULTRA 256GB KIT",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "d7aa5ac3-6d64-46b8-9a28-b2e9435794cf",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 90000,
+        "price": 100000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S23 ULTRA 256GB KIT",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s23-ultra-512gb-pta",
+    "name": "S23 ULTRA 512GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "ccdf7938-e2b9-464a-8d4a-0fe251cbe0b8",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 145000,
+        "price": 160000,
+        "stock": 4
+      }
+    ],
+    "_importedFrom": "S23 ULTRA 512GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s23-ultra-512gb-cpid",
+    "name": "S23 ULTRA 512GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "cpid",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "512GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "62357b19-6e13-43ff-98d2-ab6bd6ff1ae2",
+        "storage": "512GB",
+        "color": "Default",
+        "approval": "cpid",
+        "costPrice": 150000,
+        "price": 165000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "S23 ULTRA 512GB CPID",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "samsung-s23-256gb-pta",
+    "name": "S23+ 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "95023f40-49a7-455f-a6b5-bcfdee3d5739",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 90000,
+        "price": 100000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S23+ 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s24-ultra-pta",
+    "name": "S24 ULTRA",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "ca809653-b929-4f21-9893-402e3d1c34b8",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 200000,
+        "price": 221000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S24 ULTRA PTA",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "samsung-s24-ultra-non-pta",
+    "name": "S24 ULTRA",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "non-pta",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "140bcee2-53f3-4899-8b89-a60c7cae6082",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "non-pta",
+        "costPrice": 135000,
+        "price": 149000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S24 ULTRA NON",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "samsung-s24-ultra-256gb-cpid",
+    "name": "S24 ULTRA 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "cpid",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "031dfe10-b17d-4869-af6f-9a9d2af9ba22",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "cpid",
+        "costPrice": 250000,
+        "price": 275000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "S24 ULTRA 256GB CPID",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "samsung-s25-ultra-256gb-unspecified",
+    "name": "S25 ULTRA 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "e2256803-15fe-4164-a140-ef10cc4e1ad9",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 190000,
+        "price": 210000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "S25 ULTRA 256GB",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "samsung-s25-256gb-pta",
+    "name": "S25+ 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "4c268232-7a81-4ddd-b4d8-e6221a873045",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 180000,
+        "price": 199000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "S25+ 256GB PTA",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "samsung-s25-256gb-jv",
+    "name": "S25+ 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "jv",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "4db5433e-6534-47d4-b7dd-d04477dee30f",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "jv",
+        "costPrice": 120000,
+        "price": 132000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "S25+ 256GB JV",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "samsung-s25-256gb-cpid",
+    "name": "S25+ 256GB",
+    "brand": "Samsung",
+    "category": "SAMSUNG",
+    "condition": "used",
+    "approval": "cpid",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "2f8d45c0-f590-4433-be32-20da31d3884e",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "cpid",
+        "costPrice": 180000,
+        "price": 199000,
+        "stock": 3
+      }
+    ],
+    "_importedFrom": "S25+ 256GB CPID",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "google-pixel-10-128gb-unspecified",
+    "name": "PIXEL 10 128GB",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "0f5b3c0b-5a83-4605-8fb6-cfa687af4daf",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "PIXEL 10 128GB",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "google-pixel-5-128gb-unspecified",
+    "name": "PIXEL 5 128GB",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "7dbd6e56-6df4-4da9-82d9-a1f82ec507b7",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "PIXEL 5 128GB",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "google-pixel-6-pro-128gb-unspecified",
+    "name": "PIXEL 6 PRO 128GB",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "a579418d-3d36-40fe-bb98-13d359e8dd11",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "PIXEL 6 PRO 128GB",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "google-pixel-7-unspecified",
+    "name": "PIXEL 7",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "1557cfdd-74d0-4011-8334-2b24414e5a89",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 42500,
+        "price": 47000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "PIXEL 7",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "google-pixel-7-pro-unspecified",
+    "name": "PIXEL 7 PRO",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "cdb20d03-95d9-4b90-ac1d-11a3690dbb88",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 78000,
+        "price": 86000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "PIXEL 7 PRO",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "google-pixel-7-pro-128gb-pta",
+    "name": "PIXEL 7 PRO 128GB",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "8b699c40-b02f-43f7-9ffa-0ea58986346e",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 77000,
+        "price": 85000,
+        "stock": 3
+      }
+    ],
+    "_importedFrom": "PIXEL 7 PRO 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "google-pixel-7a-128gb-pta",
+    "name": "PIXEL 7A 128GB",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "36c5ba72-be88-484a-99a1-ad71ebe691f4",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "PIXEL 7A 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "google-pixel-7pro-128gb-pta",
+    "name": "PIXEL 7PRO 128GB",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "f42678a5-430d-4cab-b86b-21a1bb50e990",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 77000,
+        "price": 85000,
+        "stock": 5
+      }
+    ],
+    "_importedFrom": "PIXEL 7PRO 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.547Z"
+  },
+  {
+    "id": "google-pixel-8-128gb-pta",
+    "name": "PIXEL 8 128GB",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "4b2b3e40-eab5-4fee-b0f8-893ece2ad3d2",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 70000,
+        "price": 77000,
+        "stock": 1
+      }
+    ],
+    "_importedFrom": "PIXEL 8 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.551Z"
+  },
+  {
+    "id": "google-pixel-8-pro-128-pta",
+    "name": "PIXEL 8 PRO 128",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "e96032bb-0ab6-4663-b008-9c4ddbb6e27b",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 110000,
+        "price": 122000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "PIXEL 8 PRO 128 PTA",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "google-pixel-8pro-128-pta",
+    "name": "PIXEL 8PRO 128",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "4e5d9f8f-e1f3-40d3-94e2-bedac086fd75",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 80000,
+        "price": 88000,
+        "stock": 3
+      }
+    ],
+    "_importedFrom": "PIXEL 8PRO 128 PTA",
+    "_importDate": "2026-05-13T13:14:31.548Z"
+  },
+  {
+    "id": "google-pixel-9-pro-xl-unspecified",
+    "name": "PIXEL 9 PRO XL",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "See description",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "a7dcb0b3-61ff-4a1e-abe0-ff765c50a3c0",
+        "storage": "N/A",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 150000,
+        "price": 165000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "PIXEL 9 PRO XL",
+    "_importDate": "2026-05-13T13:14:31.550Z"
+  },
+  {
+    "id": "google-pixel-9a-128gb-pta",
+    "name": "PIXEL 9A 128GB",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "new",
+    "approval": "pta",
+    "deliverable": true,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "492e3c98-8c25-4966-8877-d319ea44c3e1",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "pta",
+        "costPrice": 70000,
+        "price": 77000,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "PIXEL 9A 128GB PTA",
+    "_importDate": "2026-05-13T13:14:31.553Z"
+  },
+  {
+    "id": "google-pixel-9pro-xl-128-256gb-unspecified",
+    "name": "PIXEL 9PRO XL 128/256GB",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "3cbb4f7f-6595-49ac-9850-066cc36d27d2",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 155000,
+        "price": 171000,
+        "stock": 7
+      }
+    ],
+    "_importedFrom": "PIXEL 9PRO XL 128/256GB",
+    "_importDate": "2026-05-13T13:14:31.549Z"
+  },
+  {
+    "id": "google-pixel-9pro-xl-128gb-unspecified",
+    "name": "PIXEL 9PRO XL 128GB",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": true,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "128GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "5cba7618-e6fa-4eed-ac61-e9e27a1f1bcf",
+        "storage": "128GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 155000,
+        "price": 171000,
+        "stock": 9
+      }
+    ],
+    "_importedFrom": "PIXEL 9PRO XL 128GB",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  },
+  {
+    "id": "google-pixel-9pro-xl-256gb-unspecified",
+    "name": "PIXEL 9PRO XL 256GB",
+    "brand": "Google",
+    "category": "GOOGLE",
+    "condition": "used",
+    "approval": "unspecified",
+    "deliverable": false,
+    "published": false,
+    "images": [],
+    "warranty": "7-day checking warranty",
+    "specs": {
+      "storage": "256GB",
+      "color": null,
+      "display": "",
+      "chip": "",
+      "camera": "",
+      "battery": ""
+    },
+    "variants": [
+      {
+        "variantId": "abadd8e4-733b-494a-928e-f73e2eac2742",
+        "storage": "256GB",
+        "color": "Default",
+        "approval": "unspecified",
+        "costPrice": 0,
+        "price": 0,
+        "stock": 2
+      }
+    ],
+    "_importedFrom": "PIXEL 9PRO XL 256GB",
+    "_importDate": "2026-05-13T13:14:31.554Z"
+  }
+]
