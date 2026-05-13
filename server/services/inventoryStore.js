@@ -44,6 +44,34 @@ async function writeInventory(inventory) {
   fs.renameSync(tmpPath, inventoryPath);
 }
 
+async function writeProducts(products) {
+  if (hasPostgres) {
+    await initPostgres();
+    const client = await pool.connect();
+    try {
+      await client.query('BEGIN');
+      for (const product of products) {
+        await client.query(`
+          INSERT INTO inventory_products (id, product, updated_at)
+          VALUES ($1, $2::jsonb, NOW())
+          ON CONFLICT (id) DO UPDATE SET product = EXCLUDED.product, updated_at = NOW()
+        `, [product.id, JSON.stringify(product)]);
+      }
+      await client.query('COMMIT');
+    } catch (error) {
+      await client.query('ROLLBACK');
+      throw error;
+    } finally {
+      client.release();
+    }
+    return;
+  }
+
+  const inventory = await readInventory();
+  const byId = new Map(products.map((product) => [product.id, product]));
+  await writeInventory(inventory.map((product) => byId.get(product.id) || product));
+}
+
 function stripCost(product) {
   return {
     ...product,
@@ -60,4 +88,4 @@ function isSellable(product) {
   return Boolean(product?.published && SELLABLE_APPROVALS.has(product.approval));
 }
 
-module.exports = { inventoryPath, readInventory, writeInventory, stripCost, publicProducts, isSellable };
+module.exports = { inventoryPath, readInventory, writeInventory, writeProducts, stripCost, publicProducts, isSellable };

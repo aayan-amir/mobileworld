@@ -3,7 +3,7 @@ const crypto = require('crypto');
 const { body, param, validationResult } = require('express-validator');
 const upload = require('../middleware/upload');
 const { orderLimiter } = require('../middleware/rateLimit');
-const { readInventory, writeInventory, isSellable } = require('../services/inventoryStore');
+const { readInventory, writeProducts, isSellable } = require('../services/inventoryStore');
 const { sendOrderEmail } = require('../services/email');
 const { savePaymentScreenshot } = require('../services/uploadStore');
 const { createOrder, getPublicOrder } = require('../services/orderStore');
@@ -49,6 +49,7 @@ router.post(
     const requestedItems = parseItems(req.body.items);
     const inventory = await readInventory();
     const orderItems = [];
+    const touchedProducts = new Map();
     let total = 0;
 
     for (const requestItem of requestedItems) {
@@ -63,6 +64,7 @@ router.post(
       if (variant.stock < qty) return res.status(400).json({ error: `${product.name} has only ${variant.stock} in stock.` });
 
       variant.stock -= qty;
+      touchedProducts.set(product.id, product);
       const unitPrice = Number(variant.price);
       total += unitPrice * qty;
       orderItems.push({
@@ -75,7 +77,7 @@ router.post(
       });
     }
 
-    await writeInventory(inventory);
+    await writeProducts([...touchedProducts.values()]);
 
     const id = orderId();
     const screenshot = await savePaymentScreenshot(req.file);
