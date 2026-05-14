@@ -29,6 +29,7 @@ export const api = {
   replaceInventory: (payload) => request('/api/admin/inventory', { method: 'PUT', body: JSON.stringify(payload) }),
   updateProduct: (id, payload) => request(`/api/admin/inventory/${id}`, { method: 'PATCH', body: JSON.stringify(payload) }),
   updateVariant: (id, variantId, payload) => request(`/api/admin/inventory/${id}/variants/${variantId}`, { method: 'PATCH', body: JSON.stringify(payload) }),
+  uploadProductImage: (id, formData) => request(`/api/admin/inventory/${id}/images`, { method: 'POST', body: formData }),
   deleteProduct: (id) => request(`/api/admin/inventory/${id}`, { method: 'DELETE' })
 };
 

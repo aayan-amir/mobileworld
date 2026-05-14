@@ -1,5 +1,6 @@
 const db = require('../db');
 const { hasPostgres, pool, initPostgres } = require('./postgres');
+const { readInventory, writeProducts, isSellable } = require('./inventoryStore');
 
 function parseSqliteOrder(order) {
   if (!order) return null;
@@ -38,6 +39,118 @@ async function createOrder(order) {
     order.screenshot_path
   );
   return getOrder(order.id);
+}
+
+function makeOrderStockError(message) {
+  const error = new Error(message);
+  error.status = 400;
+  return error;
+}
+
+async function placeOrder(order, requestedItems) {
+  if (hasPostgres) {
+    await initPostgres();
+    const client = await pool.connect();
+    const orderItems = [];
+    const touchedProducts = new Map();
+    let total = 0;
+
+    try {
+      await client.query('BEGIN');
+
+      for (const requestItem of requestedItems) {
+        const qty = Number(requestItem.qty);
+        if (!Number.isInteger(qty) || qty < 1) throw makeOrderStockError('Each item must have a valid quantity.');
+
+        const { rows } = await client.query(
+          'SELECT product FROM inventory_products WHERE id = $1 FOR UPDATE',
+          [requestItem.productId]
+        );
+        const product = rows[0]?.product;
+        if (!isSellable(product)) throw makeOrderStockError('One or more products are unavailable.');
+
+        const variant = (product.variants || []).find((item) => item.variantId === requestItem.variantId);
+        if (!variant) throw makeOrderStockError('One or more variants are unavailable.');
+        if (variant.stock < qty) throw makeOrderStockError(`${product.name} has only ${variant.stock} in stock.`);
+
+        variant.stock -= qty;
+        touchedProducts.set(product.id, product);
+        const unitPrice = Number(variant.price);
+        total += unitPrice * qty;
+        orderItems.push({
+          productId: product.id,
+          variantId: variant.variantId,
+          name: product.name,
+          variant: `${variant.storage || 'N/A'} / ${variant.color || 'Default'} / ${variant.approval || product.approval}`,
+          qty,
+          price: unitPrice
+        });
+      }
+
+      for (const product of touchedProducts.values()) {
+        await client.query(
+          'UPDATE inventory_products SET product = $1::jsonb, updated_at = NOW() WHERE id = $2',
+          [JSON.stringify(product), product.id]
+        );
+      }
+
+      const { rows } = await client.query(`
+        INSERT INTO orders (id, customer_name, customer_email, customer_phone, items, total_amount, screenshot_path, screenshot_url, status)
+        VALUES ($1, $2, $3, $4, $5::jsonb, $6, $7, $8, 'pending')
+        RETURNING *
+      `, [
+        order.id,
+        order.customer_name,
+        order.customer_email,
+        order.customer_phone,
+        JSON.stringify(orderItems),
+        total,
+        order.screenshot_path,
+        order.screenshot_url
+      ]);
+
+      await client.query('COMMIT');
+      return rows[0];
+    } catch (error) {
+      await client.query('ROLLBACK');
+      throw error;
+    } finally {
+      client.release();
+    }
+  }
+
+  const inventory = await readInventory();
+  const touchedProducts = new Map();
+  const orderItems = [];
+  let total = 0;
+
+  for (const requestItem of requestedItems) {
+    const qty = Number(requestItem.qty);
+    if (!Number.isInteger(qty) || qty < 1) throw makeOrderStockError('Each item must have a valid quantity.');
+
+    const product = inventory.find((item) => item.id === requestItem.productId && isSellable(item));
+    if (!product) throw makeOrderStockError('One or more products are unavailable.');
+
+    const variant = (product.variants || []).find((item) => item.variantId === requestItem.variantId);
+    if (!variant) throw makeOrderStockError('One or more variants are unavailable.');
+    if (variant.stock < qty) throw makeOrderStockError(`${product.name} has only ${variant.stock} in stock.`);
+
+    variant.stock -= qty;
+    touchedProducts.set(product.id, product);
+    const unitPrice = Number(variant.price);
+    total += unitPrice * qty;
+    orderItems.push({
+      productId: product.id,
+      variantId: variant.variantId,
+      name: product.name,
+      variant: `${variant.storage || 'N/A'} / ${variant.color || 'Default'} / ${variant.approval || product.approval}`,
+      qty,
+      price: unitPrice
+    });
+  }
+
+  await writeProducts([...touchedProducts.values()]);
+  return createOrder({ ...order, items: orderItems, total_amount: total });
 }
 
 async function getOrder(id) {
@@ -93,4 +206,4 @@ async function updateOrder(id, patch) {
   return getOrder(id);
 }
 
-module.exports = { createOrder, getOrder, getPublicOrder, listOrders, updateOrder };
+module.exports = { createOrder, placeOrder, getOrder, getPublicOrder, listOrders, updateOrder };

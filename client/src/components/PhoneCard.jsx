@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import ApprovalBadge from './ApprovalBadge';
 import ConditionBadge from './ConditionBadge';
+import PackageBadge from './PackageBadge';
 import StockBadge from './StockBadge';
 import { pkr } from '../utils/api';
 
@@ -20,7 +21,7 @@ export default function PhoneCard({ phone }) {
   const image = phone.images?.[0] || fallbackImage(phone);
 
   return (
-    <Link to={`/phone/${phone.id}`} className={`group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:border-cobalt/30 hover:shadow-2xl ${stock <= 0 ? 'opacity-60' : ''}`}>
+    <Link to={`/phone/${phone.id}`} className={`group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:border-electric/30 hover:shadow-2xl ${stock <= 0 ? 'opacity-60' : ''}`}>
       <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
         <img src={image} alt={phone.name} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
         <div className="absolute inset-x-0 top-0 flex items-center justify-between p-3">
@@ -31,10 +32,11 @@ export default function PhoneCard({ phone }) {
       </div>
       <div className="space-y-4 p-4">
         <div className="flex flex-wrap gap-2">
+          <PackageBadge type={phone.packageType} />
           <ApprovalBadge approval={phone.approval} />
           <ConditionBadge condition={phone.condition} />
         </div>
-        <h3 className="min-h-12 text-base font-extrabold leading-snug text-ink group-hover:text-cobalt">{phone.name}</h3>
+        <h3 className="min-h-12 text-base font-extrabold leading-snug text-ink group-hover:text-electric">{phone.name}</h3>
         <div className="flex items-center justify-between gap-3">
           <span>
             <span className="block text-xs font-semibold text-muted">From</span>

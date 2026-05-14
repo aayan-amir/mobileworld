@@ -18,8 +18,6 @@ const APPROVAL_FLAGS = {
   PTA: 'pta',
   JV: 'jv',
   FU: 'fu',
-  'B/P': 'boxpack',
-  BP: 'boxpack',
   'NON-PTA': 'non-pta',
   NON: 'non-pta',
   CPID: 'cpid',
@@ -45,6 +43,13 @@ function cleanDisplayName(name) {
   return clean.replace(/\s+/g, ' ').trim();
 }
 
+function extractPackageType(name) {
+  const upper = name.toUpperCase();
+  if (/\b(B\/P|BP|BOX\s*PACK)\b/.test(upper)) return 'boxpack';
+  if (/\bKIT\b/.test(upper)) return 'kit';
+  return 'kit';
+}
+
 function extractStorage(name) {
   const match = name.match(/(\d+)\s*(GB|TB)/i);
   return match ? `${match[1]}${match[2].toUpperCase()}` : null;
@@ -65,8 +70,8 @@ function mapBrand(cat) {
   return { IPHONE: 'Apple', SAMSUNG: 'Samsung', GOOGLE: 'Google' }[cat] || cat;
 }
 
-function inferCondition(name, approval) {
-  if (approval === 'boxpack') return 'new';
+function inferCondition(name, approval, pkg) {
+  if (pkg === 'boxpack') return 'new';
   if (name.toUpperCase().includes('REFURB')) return 'refurbished';
   if (approval === 'pta') return 'new';
   return 'used';
@@ -99,9 +104,10 @@ for (const entry of Object.values(phoneMap)) {
 
   const approval = parseApproval(entry.rawName);
   const displayName = cleanDisplayName(entry.rawName);
+  const pkg = extractPackageType(entry.rawName);
   const storage = extractStorage(entry.rawName);
   const color = extractColor(entry.rawName);
-  const condition = inferCondition(entry.rawName, approval);
+  const condition = inferCondition(entry.rawName, approval, pkg);
   const brand = mapBrand(entry.cat);
   const sellingPrice = entry.costPerUnit > 0 ? Math.ceil((entry.costPerUnit * 1.1) / 1000) * 1000 : 0;
   const baseId = slugify(`${brand}-${displayName}-${approval}`);
@@ -115,6 +121,7 @@ for (const entry of Object.values(phoneMap)) {
     category: entry.cat,
     condition,
     approval,
+    packageType: pkg,
     deliverable: condition !== 'used',
     published: sellingPrice > 0,
     images: [],

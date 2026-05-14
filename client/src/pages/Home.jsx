@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, BadgeCheck, Landmark, MapPin, ShieldCheck } from 'lucide-react';
 import PhoneCard from '../components/PhoneCard';
 import ApprovalBadge from '../components/ApprovalBadge';
+import PackageBadge from '../components/PackageBadge';
 import { api, pkr } from '../utils/api';
 
 const heroImage = 'https://images.pexels.com/photos/11297769/pexels-photo-11297769.jpeg?auto=compress&cs=tinysrgb&w=1800';
@@ -35,7 +36,7 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-4 py-6">
         <div className="relative min-h-[620px] overflow-hidden rounded-[2rem] bg-ink text-white shadow-2xl">
           <img src={heroImage} alt="Smartphones displayed in a retail store" className="absolute inset-0 h-full w-full object-cover opacity-55" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-950/90 via-slate-950/60 to-cyan-900/20" />
           <div className="relative grid min-h-[620px] items-end gap-8 p-6 md:p-10 lg:grid-cols-[1fr_380px]">
             <div className="max-w-3xl pb-4">
               <div className="mb-5 inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-bold backdrop-blur">
@@ -48,7 +49,7 @@ export default function Home() {
                 PTA Approved and Factory Unlocked iPhones, Samsung flagships, and Pixels with clear prices, stock, and pickup from our shop.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link to="/shop" className="btn-primary bg-white text-ink hover:bg-slate-100">Shop phones <ArrowRight size={18} /></Link>
+                <Link to="/shop" className="btn-primary">Shop phones <ArrowRight size={18} /></Link>
                 <a href="#featured" className="btn-secondary border-white/30 bg-white/10 text-white hover:border-white hover:text-white">See featured</a>
               </div>
             </div>
@@ -60,7 +61,7 @@ export default function Home() {
                   <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-muted">Spotlight</p>
                   <h2 className="mt-1 line-clamp-2 text-xl font-extrabold">{heroPhone?.name || 'Fresh stock available'}</h2>
                 </div>
-                {heroPhone && <ApprovalBadge approval={heroPhone.approval} />}
+                {heroPhone && <div className="flex flex-wrap justify-end gap-2"><PackageBadge type={heroPhone.packageType} /><ApprovalBadge approval={heroPhone.approval} /></div>}
               </div>
               <div className="mt-4 flex items-center justify-between rounded-xl bg-slate-100 p-4">
                 <span className="text-sm font-bold text-muted">Starting from</span>
@@ -75,7 +76,7 @@ export default function Home() {
         <div className="grid gap-4 md:grid-cols-4">
           {trust.map(([label, Icon, copy]) => (
             <div key={label} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <Icon className="text-cobalt" size={24} />
+          <Icon className="text-electric" size={24} />
               <div className="mt-4 font-extrabold text-ink">{label}</div>
               <div className="mt-1 text-sm leading-6 text-muted">{copy}</div>
             </div>
@@ -86,12 +87,12 @@ export default function Home() {
       <section id="featured" className="mx-auto max-w-7xl px-4 py-10">
         <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-cobalt">Current stock</p>
+            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-electric">Current stock</p>
             <h2 className="mt-2 text-4xl font-extrabold tracking-[-0.02em] text-ink">Featured phones</h2>
           </div>
           <div className="flex rounded-xl border border-slate-200 bg-white p-1 shadow-sm">
             {['All', 'Apple', 'Samsung', 'Google'].map((item) => (
-              <button key={item} className={`rounded-lg px-4 py-2 text-sm font-extrabold ${brand === item ? 'bg-ink text-white' : 'text-muted hover:text-ink'}`} onClick={() => setBrand(item)} type="button">{item}</button>
+              <button key={item} className={`rounded-lg px-4 py-2 text-sm font-extrabold ${brand === item ? 'bg-electric text-white' : 'text-muted hover:text-ink'}`} onClick={() => setBrand(item)} type="button">{item}</button>
             ))}
           </div>
         </div>

@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const multer = require('multer');
+const { hasCloudinary } = require('../services/uploadStore');
 
 const uploadDir = path.join(__dirname, '..', 'uploads');
 fs.mkdirSync(uploadDir, { recursive: true });
@@ -19,7 +20,7 @@ const storage = multer.diskStorage({
 const memoryStorage = multer.memoryStorage();
 
 const upload = multer({
-  storage: process.env.CLOUDINARY_CLOUD_NAME ? memoryStorage : storage,
+  storage: hasCloudinary ? memoryStorage : storage,
   limits: { fileSize: 5 * 1024 * 1024 },
   fileFilter: (req, file, cb) => {
     if (!allowed.has(file.mimetype)) return cb(new Error('Payment screenshot must be jpg, png, or webp.'));

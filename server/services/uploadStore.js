@@ -17,10 +17,10 @@ if (hasCloudinary) {
   });
 }
 
-function uploadBuffer(file) {
+function uploadBuffer(file, folder = 'mobile-world/payments') {
   return new Promise((resolve, reject) => {
     const stream = cloudinary.uploader.upload_stream({
-      folder: 'mobile-world/payments',
+      folder,
       resource_type: 'image'
     }, (error, result) => {
       if (error) return reject(error);
@@ -32,7 +32,7 @@ function uploadBuffer(file) {
 
 async function savePaymentScreenshot(file) {
   if (hasCloudinary) {
-    const result = await uploadBuffer(file);
+    const result = await uploadBuffer(file, 'mobile-world/payments');
     return {
       path: result.public_id,
       url: result.secure_url,
@@ -48,9 +48,27 @@ async function savePaymentScreenshot(file) {
   };
 }
 
+async function saveProductImage(file) {
+  if (hasCloudinary) {
+    const result = await uploadBuffer(file, 'mobile-world/products');
+    return {
+      url: result.secure_url,
+      path: result.public_id,
+      provider: 'cloudinary'
+    };
+  }
+
+  return {
+    url: `/api/admin/uploads/${file.filename}`,
+    path: file.filename,
+    localPath: file.path,
+    provider: 'local'
+  };
+}
+
 function resolveLocalUpload(filename) {
   const filePath = path.join(__dirname, '..', 'uploads', filename);
   return fs.existsSync(filePath) ? filePath : null;
 }
 
-module.exports = { hasCloudinary, savePaymentScreenshot, resolveLocalUpload };
+module.exports = { hasCloudinary, savePaymentScreenshot, saveProductImage, resolveLocalUpload };

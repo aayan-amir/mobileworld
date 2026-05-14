@@ -8,7 +8,7 @@ const bannerImage = 'https://images.pexels.com/photos/28919443/pexels-photo-2891
 export default function Shop() {
   const [phones, setPhones] = useState([]);
   const [error, setError] = useState('');
-  const [filters, setFilters] = useState({ brand: 'All', condition: 'All', approval: 'All', max: 500000, storage: 'All', sort: 'high', q: '' });
+  const [filters, setFilters] = useState({ brand: 'All', packageType: 'All', approval: 'All', max: 500000, storage: 'All', sort: 'high', q: '' });
 
   useEffect(() => {
     api.getInventory().then(setPhones).catch((err) => setError(err.message));
@@ -23,7 +23,7 @@ export default function Shop() {
     const query = filters.q.trim().toLowerCase();
     const matchesQuery = !query || `${phone.name} ${phone.brand}`.toLowerCase().includes(query);
     return (filters.brand === 'All' || phone.brand === filters.brand)
-      && (filters.condition === 'All' || phone.condition === filters.condition)
+      && (filters.packageType === 'All' || (phone.packageType || 'kit') === filters.packageType)
       && (filters.approval === 'All' || phone.approval === filters.approval)
       && minPrice <= Number(filters.max)
       && hasStorage
@@ -42,7 +42,7 @@ export default function Shop() {
     <main className="mx-auto max-w-7xl px-4 py-6">
       <div className="relative min-h-[360px] overflow-hidden rounded-[2rem] bg-ink text-white shadow-2xl">
         <img src={bannerImage} alt="Smartphone display in a tech store" className="absolute inset-0 h-full w-full object-cover opacity-60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-950/90 via-slate-950/60 to-cyan-900/10" />
         <div className="relative flex min-h-[360px] flex-col justify-end p-6 md:p-10">
           <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-blue-200">Verified catalog</p>
           <h1 className="mt-3 max-w-3xl text-5xl font-extrabold leading-none tracking-[-0.03em] md:text-7xl">Shop phones ready for pickup.</h1>
@@ -60,16 +60,16 @@ export default function Shop() {
               <label className="label">Search</label>
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" size={18} />
-                <input className="field pl-10" placeholder="iPhone 16, S25, Pixel..." value={filters.q} onChange={(e) => setFilter('q', e.target.value)} />
+                <input className="field !pl-11" placeholder="iPhone 16, S25, Pixel..." value={filters.q} onChange={(e) => setFilter('q', e.target.value)} />
               </div>
             </div>
             <Filter label="Brand" value={filters.brand} onChange={(v) => setFilter('brand', v)} options={['All', 'Apple', 'Samsung', 'Google']} />
-            <Filter label="Condition" value={filters.condition} onChange={(v) => setFilter('condition', v)} options={['All', 'new', 'refurbished', 'used']} />
+            <Filter label="Package" value={filters.packageType} onChange={(v) => setFilter('packageType', v)} options={['All', 'boxpack', 'kit']} labels={{ boxpack: 'Box Pack', kit: 'Kit' }} />
             <Filter label="Approval" value={filters.approval} onChange={(v) => setFilter('approval', v)} options={['All', 'pta', 'fu']} />
             <Filter label="Storage" value={filters.storage} onChange={(v) => setFilter('storage', v)} options={storages} />
             <div>
               <label className="label">Max Price: {pkr(filters.max)}</label>
-              <input className="w-full accent-cobalt" type="range" min="0" max="500000" step="10000" value={filters.max} onChange={(e) => setFilter('max', e.target.value)} />
+              <input className="w-full accent-electric" type="range" min="0" max="500000" step="10000" value={filters.max} onChange={(e) => setFilter('max', e.target.value)} />
             </div>
             <Filter label="Sort" value={filters.sort} onChange={(v) => setFilter('sort', v)} options={['high', 'low']} labels={{ high: 'Price High to Low', low: 'Price Low to High' }} />
           </div>
@@ -79,9 +79,9 @@ export default function Shop() {
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
             <div>
               <div className="text-2xl font-extrabold text-ink">{filtered.length} phones</div>
-              <div className="text-sm font-semibold text-muted">PTA/FU stock visible to customers</div>
+              <div className="text-sm font-semibold text-muted">Box Pack and Kit stock, divided by PTA/FU</div>
             </div>
-            <div className="rounded-full bg-cobalt/10 px-4 py-2 text-sm font-extrabold text-cobalt">Star City Mall pickup</div>
+            <div className="rounded-full bg-gradient-to-r from-electric/10 to-aqua/10 px-4 py-2 text-sm font-extrabold text-electric">Star City Mall pickup</div>
           </div>
 
           {error && <div className="rounded-xl border border-red-200 bg-red-50 p-4 font-bold text-danger">{error}</div>}

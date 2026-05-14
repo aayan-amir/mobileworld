@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { CheckCircle2, MapPin, ShoppingCart } from 'lucide-react';
 import ApprovalBadge from '../components/ApprovalBadge';
 import ConditionBadge from '../components/ConditionBadge';
+import PackageBadge from '../components/PackageBadge';
 import StockBadge from '../components/StockBadge';
 import UsedPhoneWarning from '../components/UsedPhoneWarning';
 import VariantSelector from '../components/VariantSelector';
@@ -43,6 +44,7 @@ export default function PhonePage() {
         <section className="space-y-6">
           <div>
             <div className="mb-3 flex flex-wrap gap-2">
+              <PackageBadge type={phone.packageType} />
               <ApprovalBadge approval={phone.approval} />
               <ConditionBadge condition={phone.condition} />
             </div>

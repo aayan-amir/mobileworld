@@ -5,6 +5,34 @@ const { hasPostgres, pool, initPostgres } = require('./postgres');
 const inventoryPath = path.join(__dirname, '..', 'data', 'inventory.json');
 const SELLABLE_APPROVALS = new Set(['pta', 'fu']);
 
+function packageType(product) {
+  const raw = `${product?._importedFrom || ''} ${product?.name || ''}`.toUpperCase();
+  if (product?.packageType === 'boxpack' || product?.approval === 'boxpack' || /\b(B\/P|BP|BOX\s*PACK)\b/.test(raw)) return 'boxpack';
+  if (product?.packageType === 'kit' || /\bKIT\b/.test(raw)) return 'kit';
+  return product?.packageType || 'kit';
+}
+
+function normalizeApproval(product) {
+  if (product?.approval === 'boxpack') {
+    const variantApproval = (product.variants || []).map((variant) => variant.approval).find((approval) => SELLABLE_APPROVALS.has(approval));
+    return variantApproval || 'pta';
+  }
+  return product?.approval;
+}
+
+function normalizePublicProduct(product) {
+  const approval = normalizeApproval(product);
+  return {
+    ...product,
+    approval,
+    packageType: packageType(product),
+    variants: (product.variants || []).map((variant) => ({
+      ...variant,
+      approval: variant.approval === 'boxpack' ? approval : variant.approval
+    }))
+  };
+}
+
 async function readInventory() {
   if (hasPostgres) {
     await initPostgres();
@@ -73,19 +101,20 @@ async function writeProducts(products) {
 }
 
 function stripCost(product) {
+  const normalized = normalizePublicProduct(product);
   return {
-    ...product,
-    variants: (product.variants || []).map(({ costPrice, ...variant }) => variant)
+    ...normalized,
+    variants: (normalized.variants || []).map(({ costPrice, ...variant }) => variant)
   };
 }
 
 async function publicProducts(inventory) {
   const source = inventory || await readInventory();
-  return source.filter((p) => p.published && SELLABLE_APPROVALS.has(p.approval)).map(stripCost);
+  return source.filter((p) => p.published && SELLABLE_APPROVALS.has(normalizeApproval(p))).map(stripCost);
 }
 
 function isSellable(product) {
-  return Boolean(product?.published && SELLABLE_APPROVALS.has(product.approval));
+  return Boolean(product?.published && SELLABLE_APPROVALS.has(normalizeApproval(product)));
 }
 
-module.exports = { inventoryPath, readInventory, writeInventory, writeProducts, stripCost, publicProducts, isSellable };
+module.exports = { inventoryPath, readInventory, writeInventory, writeProducts, stripCost, publicProducts, isSellable, packageType, normalizeApproval };

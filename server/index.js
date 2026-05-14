@@ -46,7 +46,9 @@ app.get('*', (req, res, next) => {
 });
 
 app.use((error, req, res, next) => {
+  if (res.headersSent) return next(error);
   if (error.message?.includes('CORS')) return res.status(403).json({ error: 'Origin is not allowed.' });
+  if (error.status) return res.status(error.status).json({ error: error.message });
   if (error.code === 'LIMIT_FILE_SIZE') return res.status(400).json({ error: 'Payment screenshot must be 5MB or smaller.' });
   console.error(error);
   return res.status(500).json({ error: process.env.NODE_ENV === 'production' ? 'Something went wrong.' : error.message });

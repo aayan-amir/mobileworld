@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Trash2, Upload } from 'lucide-react';
+import { ImagePlus, Trash2, Upload } from 'lucide-react';
 import { api, pkr } from '../../utils/api';
 
 export default function AdminInventory() {
@@ -39,6 +39,14 @@ export default function AdminInventory() {
     load();
   }
 
+  async function uploadImage(productId, file) {
+    if (!file) return;
+    const form = new FormData();
+    form.append('image', file);
+    const updated = await api.uploadProductImage(productId, form);
+    setProducts((current) => current.map((product) => product.id === productId ? updated : product));
+  }
+
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
       <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
@@ -56,8 +64,9 @@ export default function AdminInventory() {
                 <tr key={product.id} className="border-t align-top">
                   <td className="p-3">
                     <div className="font-bold text-navy">{product.name}</div>
-                    <div className="text-xs text-muted">{product.brand} / {product.approval}</div>
+                    <div className="text-xs text-muted">{product.brand} / {product.packageType || 'kit'} / {product.approval}</div>
                     <div className="mt-1 text-xs text-muted">Imported: {product._importedFrom || 'Manual'}</div>
+                    <ImageUploader product={product} onUpload={uploadImage} />
                     <SpecsEditor product={product} onSave={(specs) => patchProduct(product.id, { specs })} />
                   </td>
                   <td className="p-3 capitalize">{product.condition}</td>
@@ -76,7 +85,7 @@ export default function AdminInventory() {
                     </div>
                   </td>
                   <td className="p-3">
-                    <input className="h-5 w-5 accent-gold" type="checkbox" checked={Boolean(product.published)} onChange={(e) => patchProduct(product.id, { published: e.target.checked })} />
+                    <input className="h-5 w-5 accent-electric" type="checkbox" checked={Boolean(product.published)} onChange={(e) => patchProduct(product.id, { published: e.target.checked })} />
                   </td>
                   <td className="p-3">
                     <button className="rounded-lg p-2 text-danger hover:bg-red-50" onClick={() => remove(product.id)} type="button"><Trash2 size={18} /></button>
@@ -88,6 +97,26 @@ export default function AdminInventory() {
         </div>
       </section>
     </main>
+  );
+}
+
+function ImageUploader({ product, onUpload }) {
+  const inputId = `image-${product.id}`;
+  const image = product.images?.[0];
+
+  return (
+    <div className="mt-3 flex items-center gap-3">
+      <div className="grid h-14 w-14 place-items-center overflow-hidden rounded-lg border border-slate-200 bg-slate-50">
+        {image ? <img src={image} alt={product.name} className="h-full w-full object-cover" /> : <ImagePlus className="text-muted" size={20} />}
+      </div>
+      <div>
+        <label htmlFor={inputId} className="inline-flex cursor-pointer items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-ink hover:border-cobalt hover:text-cobalt">
+          <Upload size={14} /> Upload image
+        </label>
+        <input id={inputId} className="hidden" type="file" accept="image/jpeg,image/png,image/webp" onChange={(e) => onUpload(product.id, e.target.files?.[0])} />
+        <div className="mt-1 text-xs text-muted">{product.images?.length || 0} image(s)</div>
+      </div>
+    </div>
   );
 }
 
