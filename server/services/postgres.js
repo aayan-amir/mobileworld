@@ -20,6 +20,18 @@ async function initPostgres() {
         )
       `);
       await pool.query(`
+        CREATE TABLE IF NOT EXISTS customers (
+          id TEXT PRIMARY KEY,
+          created_at TIMESTAMPTZ DEFAULT NOW(),
+          updated_at TIMESTAMPTZ DEFAULT NOW(),
+          email TEXT UNIQUE NOT NULL,
+          name TEXT,
+          phone TEXT,
+          avatar_url TEXT,
+          google_id TEXT UNIQUE
+        )
+      `);
+      await pool.query(`
         CREATE TABLE IF NOT EXISTS orders (
           id TEXT PRIMARY KEY,
           created_at TIMESTAMPTZ DEFAULT NOW(),
@@ -32,9 +44,12 @@ async function initPostgres() {
           screenshot_path TEXT,
           screenshot_url TEXT,
           status TEXT DEFAULT 'pending',
-          notes TEXT
+          notes TEXT,
+          customer_id TEXT REFERENCES customers(id)
         )
       `);
+      await pool.query('ALTER TABLE orders ADD COLUMN IF NOT EXISTS screenshot_url TEXT');
+      await pool.query('ALTER TABLE orders ADD COLUMN IF NOT EXISTS customer_id TEXT REFERENCES customers(id)');
     })();
   }
   await ready;

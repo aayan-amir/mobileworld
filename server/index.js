@@ -8,6 +8,7 @@ const cookieParser = require('cookie-parser');
 const inventoryRoutes = require('./routes/inventory');
 const orderRoutes = require('./routes/orders');
 const adminRoutes = require('./routes/admin');
+const authRoutes = require('./routes/auth');
 const { globalLimiter } = require('./middleware/rateLimit');
 
 const app = express();
@@ -35,6 +36,7 @@ app.get('/api/health', (req, res) => res.json({ ok: true }));
 app.use('/api/inventory', inventoryRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/auth', authRoutes);
 
 const clientDist = path.join(__dirname, '..', 'client', 'dist');
 app.use(express.static(clientDist));

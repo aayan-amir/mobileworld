@@ -4,6 +4,7 @@ const { body, param, validationResult } = require('express-validator');
 const upload = require('../middleware/upload');
 const asyncHandler = require('../middleware/asyncHandler');
 const { orderLimiter } = require('../middleware/rateLimit');
+const { optionalCustomer } = require('../middleware/customerAuth');
 const { sendOrderEmail } = require('../services/email');
 const { savePaymentScreenshot } = require('../services/uploadStore');
 const { placeOrder, getPublicOrder } = require('../services/orderStore');
@@ -35,6 +36,7 @@ function parseItems(value) {
 router.post(
   '/',
   orderLimiter,
+  optionalCustomer,
   upload.single('screenshot'),
   [
     body('name').trim().isLength({ min: 2, max: 100 }).withMessage('Full name is required.'),
@@ -55,6 +57,7 @@ router.post(
       customer_name: req.body.name.trim(),
       customer_email: req.body.email.trim().toLowerCase(),
       customer_phone: req.body.phone.trim(),
+      customer_id: req.customer?.id || null,
       screenshot_path: screenshot.path,
       screenshot_url: screenshot.url
     }, requestedItems);

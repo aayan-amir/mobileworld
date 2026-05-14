@@ -11,8 +11,8 @@ async function createOrder(order) {
   if (hasPostgres) {
     await initPostgres();
     await pool.query(`
-      INSERT INTO orders (id, customer_name, customer_email, customer_phone, items, total_amount, screenshot_path, screenshot_url, status)
-      VALUES ($1, $2, $3, $4, $5::jsonb, $6, $7, $8, 'pending')
+      INSERT INTO orders (id, customer_name, customer_email, customer_phone, items, total_amount, screenshot_path, screenshot_url, customer_id, status)
+      VALUES ($1, $2, $3, $4, $5::jsonb, $6, $7, $8, $9, 'pending')
     `, [
       order.id,
       order.customer_name,
@@ -21,14 +21,15 @@ async function createOrder(order) {
       JSON.stringify(order.items),
       order.total_amount,
       order.screenshot_path,
-      order.screenshot_url
+      order.screenshot_url,
+      order.customer_id || null
     ]);
     return getOrder(order.id);
   }
 
   db.prepare(`
-    INSERT INTO orders (id, customer_name, customer_email, customer_phone, items, total_amount, screenshot_path, status)
-    VALUES (?, ?, ?, ?, ?, ?, ?, 'pending')
+    INSERT INTO orders (id, customer_name, customer_email, customer_phone, items, total_amount, screenshot_path, screenshot_url, customer_id, status)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending')
   `).run(
     order.id,
     order.customer_name,
@@ -36,7 +37,9 @@ async function createOrder(order) {
     order.customer_phone,
     JSON.stringify(order.items),
     order.total_amount,
-    order.screenshot_path
+    order.screenshot_path,
+    order.screenshot_url || null,
+    order.customer_id || null
   );
   return getOrder(order.id);
 }
@@ -95,8 +98,8 @@ async function placeOrder(order, requestedItems) {
       }
 
       const { rows } = await client.query(`
-        INSERT INTO orders (id, customer_name, customer_email, customer_phone, items, total_amount, screenshot_path, screenshot_url, status)
-        VALUES ($1, $2, $3, $4, $5::jsonb, $6, $7, $8, 'pending')
+        INSERT INTO orders (id, customer_name, customer_email, customer_phone, items, total_amount, screenshot_path, screenshot_url, customer_id, status)
+        VALUES ($1, $2, $3, $4, $5::jsonb, $6, $7, $8, $9, 'pending')
         RETURNING *
       `, [
         order.id,
@@ -106,7 +109,8 @@ async function placeOrder(order, requestedItems) {
         JSON.stringify(orderItems),
         total,
         order.screenshot_path,
-        order.screenshot_url
+        order.screenshot_url,
+        order.customer_id || null
       ]);
 
       await client.query('COMMIT');
@@ -151,6 +155,24 @@ async function placeOrder(order, requestedItems) {
 
   await writeProducts([...touchedProducts.values()]);
   return createOrder({ ...order, items: orderItems, total_amount: total });
+}
+
+async function listCustomerOrders(customerId, email) {
+  if (hasPostgres) {
+    await initPostgres();
+    const { rows } = await pool.query(
+      'SELECT id, created_at, items, total_amount, status, notes FROM orders WHERE customer_id = $1 OR lower(customer_email) = lower($2) ORDER BY created_at DESC',
+      [customerId, email]
+    );
+    return rows;
+  }
+
+  return db.prepare(`
+    SELECT id, created_at, items, total_amount, status, notes
+    FROM orders
+    WHERE customer_id = ? OR lower(customer_email) = lower(?)
+    ORDER BY created_at DESC
+  `).all(customerId, email).map(parseSqliteOrder);
 }
 
 async function getOrder(id) {
@@ -206,4 +228,4 @@ async function updateOrder(id, patch) {
   return getOrder(id);
 }
 
-module.exports = { createOrder, placeOrder, getOrder, getPublicOrder, listOrders, updateOrder };
+module.exports = { createOrder, placeOrder, getOrder, getPublicOrder, listOrders, listCustomerOrders, updateOrder };

@@ -126,6 +126,16 @@ heroku config:set OWNER_ACCOUNT_NUMBER=0123456789012345
 heroku config:set CLOUDINARY_CLOUD_NAME=your_cloud_name
 heroku config:set CLOUDINARY_API_KEY=your_api_key
 heroku config:set CLOUDINARY_API_SECRET=your_api_secret
+heroku config:set APP_URL=https://your-app-name.herokuapp.com
+heroku config:set GOOGLE_CLIENT_ID=your_google_client_id
+heroku config:set GOOGLE_CLIENT_SECRET=your_google_client_secret
+heroku config:set GOOGLE_CALLBACK_URL=https://your-app-name.herokuapp.com/api/auth/google/callback
+```
+
+For customer Google login, create an OAuth client in Google Cloud Console and add this authorized redirect URI:
+
+```text
+https://your-app-name.herokuapp.com/api/auth/google/callback
 ```
 
 Deploy:

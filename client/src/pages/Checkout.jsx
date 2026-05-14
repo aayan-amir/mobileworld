@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import PaymentInstructions from '../components/PaymentInstructions';
 import { useCart } from '../context/CartContext';
 import { api, pkr } from '../utils/api';
@@ -12,7 +12,19 @@ export default function Checkout() {
   const [form, setForm] = useState({ name: '', email: '', phone: '' });
   const [file, setFile] = useState(null);
   const [error, setError] = useState('');
+  const [customer, setCustomer] = useState(null);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    api.customerMe().then((me) => {
+      setCustomer(me);
+      setForm((current) => ({
+        name: current.name || me.name || '',
+        email: current.email || me.email || '',
+        phone: current.phone || me.phone || ''
+      }));
+    }).catch(() => {});
+  }, []);
 
   async function submit(e) {
     e.preventDefault();
@@ -47,6 +59,15 @@ export default function Checkout() {
       <h1 className="font-display text-5xl font-bold text-ink">Checkout</h1>
       <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_380px]">
         <form className="panel space-y-5 p-6" onSubmit={submit}>
+          {customer ? (
+            <div className="rounded-xl bg-electric/10 p-4 text-sm font-bold text-electric">
+              Signed in as {customer.email}. This order will be saved to your account.
+            </div>
+          ) : (
+            <div className="rounded-xl bg-slate-50 p-4 text-sm font-semibold text-muted">
+              Want to track this order later? <Link className="font-extrabold text-electric underline" to="/login">Sign in with Google</Link>.
+            </div>
+          )}
           <div>
             <label className="label">Full Name</label>
             <input className="field" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />

@@ -1,15 +1,43 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { api, pkr } from '../../utils/api';
 
 export default function AdminDashboard() {
+  const navigate = useNavigate();
   const [orders, setOrders] = useState([]);
   const [inventory, setInventory] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
   useEffect(() => {
-    api.adminOrders().then(setOrders).catch(() => setOrders([]));
-    api.adminInventory().then(setInventory).catch(() => setInventory([]));
-  }, []);
+    let cancelled = false;
+
+    async function loadDashboard() {
+      setLoading(true);
+      setError('');
+      try {
+        const [ordersData, inventoryData] = await Promise.all([
+          api.adminOrders(),
+          api.adminInventory()
+        ]);
+        if (cancelled) return;
+        setOrders(Array.isArray(ordersData) ? ordersData : []);
+        setInventory(Array.isArray(inventoryData) ? inventoryData : []);
+      } catch (err) {
+        if (cancelled) return;
+        if (err.status === 401) {
+          navigate('/admin/login', { replace: true });
+          return;
+        }
+        setError(err.message || 'Could not load dashboard.');
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+
+    loadDashboard();
+    return () => { cancelled = true; };
+  }, [navigate]);
 
   const stats = useMemo(() => ['pending', 'confirmed', 'completed', 'returned'].map((status) => ({
     status,
@@ -21,8 +49,17 @@ export default function AdminDashboard() {
     .map((variant) => ({ product, variant })));
 
   async function updateStatus(id, status) {
-    const updated = await api.updateOrder(id, { status });
-    setOrders((current) => current.map((order) => order.id === id ? updated : order));
+    setError('');
+    try {
+      const updated = await api.updateOrder(id, { status });
+      setOrders((current) => current.map((order) => order.id === id ? updated : order));
+    } catch (err) {
+      if (err.status === 401) {
+        navigate('/admin/login', { replace: true });
+        return;
+      }
+      setError(err.message || 'Could not update order.');
+    }
   }
 
   return (
@@ -42,6 +79,7 @@ export default function AdminDashboard() {
           </div>
         ))}
       </div>
+      {error && <div className="mt-6 rounded-2xl border border-red-200 bg-red-50 p-4 font-semibold text-red-700">{error}</div>}
       <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_360px]">
         <section className="panel overflow-hidden">
           <div className="border-b p-5 font-display text-2xl font-bold text-navy">Recent Orders</div>
@@ -57,6 +95,16 @@ export default function AdminDashboard() {
                     <td className="p-3"><Status value={order.status} onChange={(status) => updateStatus(order.id, status)} /></td>
                   </tr>
                 ))}
+                {!loading && orders.length === 0 && (
+                  <tr className="border-t">
+                    <td className="p-6 text-center text-muted" colSpan="4">No orders yet.</td>
+                  </tr>
+                )}
+                {loading && (
+                  <tr className="border-t">
+                    <td className="p-6 text-center text-muted" colSpan="4">Loading orders...</td>
+                  </tr>
+                )}
               </tbody>
             </table>
           </div>

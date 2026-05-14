@@ -1,20 +1,55 @@
 import { useEffect, useMemo, useState } from 'react';
 import { X } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { api, imageUrl, pkr } from '../../utils/api';
 
 export default function AdminOrders() {
+  const navigate = useNavigate();
   const [orders, setOrders] = useState([]);
   const [status, setStatus] = useState('all');
   const [selected, setSelected] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
   useEffect(() => {
-    api.adminOrders(status === 'all' ? '' : status).then(setOrders).catch(() => setOrders([]));
-  }, [status]);
+    let cancelled = false;
+
+    async function loadOrders() {
+      setLoading(true);
+      setError('');
+      try {
+        const data = await api.adminOrders(status === 'all' ? '' : status);
+        if (!cancelled) setOrders(Array.isArray(data) ? data : []);
+      } catch (err) {
+        if (cancelled) return;
+        if (err.status === 401) {
+          navigate('/admin/login', { replace: true });
+          return;
+        }
+        setOrders([]);
+        setError(err.message || 'Could not load orders.');
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+
+    loadOrders();
+    return () => { cancelled = true; };
+  }, [navigate, status]);
 
   async function updateOrder(order, patch) {
-    const updated = await api.updateOrder(order.id, patch);
-    setOrders((current) => current.map((item) => item.id === order.id ? updated : item));
-    setSelected(updated);
+    setError('');
+    try {
+      const updated = await api.updateOrder(order.id, patch);
+      setOrders((current) => current.map((item) => item.id === order.id ? updated : item));
+      setSelected(updated);
+    } catch (err) {
+      if (err.status === 401) {
+        navigate('/admin/login', { replace: true });
+        return;
+      }
+      setError(err.message || 'Could not update order.');
+    }
   }
 
   return (
@@ -25,6 +60,7 @@ export default function AdminOrders() {
           <button key={item} className={`rounded-lg px-4 py-2 font-bold ${status === item ? 'bg-navy text-white' : 'bg-white text-navy'}`} onClick={() => setStatus(item)} type="button">{item}</button>
         ))}
       </div>
+      {error && <div className="mt-6 rounded-2xl border border-red-200 bg-red-50 p-4 font-semibold text-red-700">{error}</div>}
       <section className="panel mt-6 overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left text-sm">
@@ -39,6 +75,16 @@ export default function AdminOrders() {
                   <td className="p-3">{new Date(order.created_at).toLocaleString()}</td>
                 </tr>
               ))}
+              {!loading && orders.length === 0 && (
+                <tr className="border-t">
+                  <td className="p-6 text-center text-muted" colSpan="5">No orders found.</td>
+                </tr>
+              )}
+              {loading && (
+                <tr className="border-t">
+                  <td className="p-6 text-center text-muted" colSpan="5">Loading orders...</td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>

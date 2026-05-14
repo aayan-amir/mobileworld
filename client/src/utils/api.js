@@ -11,7 +11,11 @@ async function request(path, options = {}) {
     }
   });
   const data = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(data.error || 'Request failed.');
+  if (!response.ok) {
+    const error = new Error(data.error || 'Request failed.');
+    error.status = response.status;
+    throw error;
+  }
   return data;
 }
 
@@ -30,7 +34,11 @@ export const api = {
   updateProduct: (id, payload) => request(`/api/admin/inventory/${id}`, { method: 'PATCH', body: JSON.stringify(payload) }),
   updateVariant: (id, variantId, payload) => request(`/api/admin/inventory/${id}/variants/${variantId}`, { method: 'PATCH', body: JSON.stringify(payload) }),
   uploadProductImage: (id, formData) => request(`/api/admin/inventory/${id}/images`, { method: 'POST', body: formData }),
-  deleteProduct: (id) => request(`/api/admin/inventory/${id}`, { method: 'DELETE' })
+  deleteProduct: (id) => request(`/api/admin/inventory/${id}`, { method: 'DELETE' }),
+  customerMe: () => request('/api/auth/me'),
+  customerLogout: () => request('/api/auth/logout', { method: 'POST' }),
+  updateCustomer: (payload) => request('/api/auth/me', { method: 'PATCH', body: JSON.stringify(payload) }),
+  customerOrders: () => request('/api/auth/orders')
 };
 
 export function pkr(amount) {
